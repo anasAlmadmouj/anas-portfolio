@@ -1,0 +1,13 @@
+.projects-archive {
+    padding-block-start: var(--space-2xl);
+    padding-block-end: var(--space-3xl);
+}
+
+.projects-archive__header {
+    margin-block-end: var(--space-2xl);
+}
+
+.projects-archive__back {
+    margin-block-end: var(--space-lg);
+    width: fit-content;
+}

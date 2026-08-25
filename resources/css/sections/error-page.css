@@ -1,0 +1,37 @@
+.error-page {
+    padding-block: var(--space-4xl);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error-page__inner {
+    max-width: 36rem;
+    margin-inline: auto;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-3xl) var(--space-xl);
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error-page h1 {
+    font-size: var(--text-3xl);
+    margin-block-end: var(--space-xs);
+}
+
+.error-page__description {
+    color: var(--color-text-muted);
+    font-size: var(--text-base);
+    line-height: var(--leading-relaxed);
+    margin-block-end: var(--space-xl);
+}
+
+.error-page .hero__actions {
+    justify-content: center;
+    margin-block-end: 0;
+}

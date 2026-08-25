@@ -1,0 +1,42 @@
+.theme-switch {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    color: var(--color-text-muted);
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.theme-switch:hover {
+    color: var(--color-text);
+    border-color: var(--color-border-hover);
+    background-color: var(--color-surface-hover);
+    transform: translateY(-1px);
+}
+
+.theme-switch__icon--moon {
+    display: none;
+}
+
+:root[data-theme='dark'] .theme-switch__icon--sun {
+    display: none;
+}
+
+:root[data-theme='dark'] .theme-switch__icon--moon {
+    display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme='light']) .theme-switch__icon--sun {
+        display: none;
+    }
+
+    :root:not([data-theme='light']) .theme-switch__icon--moon {
+        display: block;
+    }
+}

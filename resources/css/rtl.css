@@ -1,0 +1,17 @@
+/*
+ * Directional overrides for Arabic.
+ * Most layout already uses logical properties (margin-inline-*,
+ * padding-inline-*, inset-inline-*), so this file only holds the
+ * handful of rules logical properties can't express: mirroring
+ * direction-sensitive icons (arrows, chevrons) and disabling
+ * letter-spacing tricks that only make sense for Latin type.
+ */
+
+[dir='rtl'] .icon--directional {
+    transform: scaleX(-1);
+}
+
+[dir='rtl'] .u-tabular-nums {
+    direction: ltr;
+    unicode-bidi: isolate;
+}

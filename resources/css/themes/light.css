@@ -1,0 +1,32 @@
+/* Light theme — crisp slate and clean surfaces. */
+
+:root {
+    --color-background: #f8fafc;
+    --color-background-subtle: #f1f5f9;
+    --color-surface: #ffffff;
+    --color-surface-elevated: #f8fafc;
+    --color-surface-hover: #f1f5f9;
+    --color-surface-alt: #f1f5f9;
+    --color-text: #0f172a;
+    --color-text-secondary: #334155;
+    --color-text-muted: #64748b;
+    --color-text-subtle: #94a3b8;
+    --color-border: rgba(15, 23, 42, 0.08);
+    --color-border-hover: rgba(15, 23, 42, 0.18);
+    --color-border-subtle: rgba(15, 23, 42, 0.04);
+    --color-primary: #0284c7;
+    --color-primary-strong: #0369a1;
+    --color-primary-light: rgba(2, 132, 199, 0.08);
+    --color-primary-glow: rgba(2, 132, 199, 0.2);
+    --color-on-primary: #ffffff;
+    --color-accent: #6366f1;
+    --color-accent-light: rgba(99, 102, 241, 0.08);
+    --color-success: #059669;
+    --color-success-bg: rgba(5, 150, 105, 0.08);
+    --color-warning: #d97706;
+    --color-danger: #dc2626;
+    --color-danger-bg: rgba(220, 38, 38, 0.08);
+    --color-focus-ring: #0284c7;
+    --color-overlay: rgba(15, 23, 42, 0.5);
+    --grid-line-color: rgba(15, 23, 42, 0.03);
+}

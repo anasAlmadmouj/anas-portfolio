@@ -1,0 +1,84 @@
+/*
+ * Design tokens that do not change between themes.
+ * Color tokens live in themes/light.css and themes/dark.css.
+ */
+
+:root {
+    /* Layout */
+    --container-max-width: 1220px;
+    --container-padding-inline: var(--space-md);
+
+    /* Spacing — 4px base scale */
+    --space-3xs: 0.25rem;
+    --space-2xs: 0.5rem;
+    --space-xs: 0.75rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+    --space-2xl: 4.5rem;
+    --space-3xl: 6.5rem;
+    --space-4xl: 9rem;
+
+    /* Radius — modern refined curves */
+    --radius-xs: 4px;
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 22px;
+    --radius-2xl: 28px;
+    --radius-full: 9999px;
+
+    /* Shadows — deep, subtle ambient occlusion */
+    --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 8px 24px -4px rgba(0, 0, 0, 0.08), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+    --shadow-lg: 0 20px 40px -8px rgba(0, 0, 0, 0.14), 0 6px 16px -2px rgba(0, 0, 0, 0.06);
+    --shadow-xl: 0 28px 64px -12px rgba(0, 0, 0, 0.22);
+    --shadow-card-hover: 0 20px 35px -10px rgba(0, 0, 0, 0.12), 0 0 0 1px var(--color-primary-glow);
+
+    /* Motion */
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 250ms cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-slow: 450ms cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-spring: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    /* Layering */
+    --z-base: 1;
+    --z-card: 10;
+    --z-nav: 100;
+    --z-overlay: 200;
+    --z-modal: 300;
+    --z-toast: 400;
+
+    --border-width: 1px;
+
+    /* Typefaces */
+    --font-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono: 'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace;
+
+    /* Fluid type scale */
+    --text-2xs: clamp(0.7rem, 0.68rem + 0.1vw, 0.75rem);
+    --text-xs: clamp(0.78rem, 0.75rem + 0.15vw, 0.84rem);
+    --text-sm: clamp(0.875rem, 0.85rem + 0.15vw, 0.9375rem);
+    --text-base: clamp(1rem, 0.97rem + 0.18vw, 1.0625rem);
+    --text-lg: clamp(1.125rem, 1.07rem + 0.28vw, 1.25rem);
+    --text-xl: clamp(1.3rem, 1.2rem + 0.5vw, 1.55rem);
+    --text-2xl: clamp(1.65rem, 1.45rem + 0.95vw, 2.15rem);
+    --text-3xl: clamp(2.1rem, 1.8rem + 1.5vw, 2.9rem);
+    --text-4xl: clamp(2.75rem, 2.25rem + 2.4vw, 4.2rem);
+    --text-5xl: clamp(3.2rem, 2.5rem + 3.2vw, 5.2rem);
+
+    --leading-none: 1;
+    --leading-tight: 1.12;
+    --leading-snug: 1.3;
+    --leading-normal: 1.6;
+    --leading-relaxed: 1.75;
+}
+
+@media (min-width: 768px) {
+    :root {
+        --container-padding-inline: var(--space-xl);
+    }
+}

@@ -1,0 +1,28 @@
+@import 'reset.css';
+@import 'variables.css';
+@import 'themes/light.css';
+@import 'themes/dark.css';
+@import 'typography.css';
+@import 'rtl.css';
+@import 'layout.css';
+
+@import 'components/reveal.css';
+@import 'components/icon.css';
+@import 'components/buttons.css';
+@import 'components/navbar.css';
+@import 'components/theme-switcher.css';
+@import 'components/language-switcher.css';
+@import 'components/project-card.css';
+@import 'components/footer.css';
+@import 'components/forms.css';
+
+@import 'sections/hero.css';
+@import 'sections/about.css';
+@import 'sections/projects.css';
+@import 'sections/experience.css';
+@import 'sections/skills.css';
+@import 'sections/services.css';
+@import 'sections/contact.css';
+@import 'sections/project-details.css';
+@import 'sections/projects-archive.css';
+@import 'sections/error-page.css';

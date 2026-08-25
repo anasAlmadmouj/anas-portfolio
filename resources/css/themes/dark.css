@@ -1,0 +1,67 @@
+/*
+ * Dark theme — deep obsidian with electric azure and indigo accents.
+ */
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme='light']) {
+        --color-background: #090a0f;
+        --color-background-subtle: #0d0f15;
+        --color-surface: #11141c;
+        --color-surface-elevated: #161b26;
+        --color-surface-hover: #1c2230;
+        --color-surface-alt: #131722;
+        --color-text: #f3f6fc;
+        --color-text-secondary: #cbd5e1;
+        --color-text-muted: #8896ab;
+        --color-text-subtle: #4f5d73;
+        --color-border: rgba(255, 255, 255, 0.08);
+        --color-border-hover: rgba(255, 255, 255, 0.18);
+        --color-border-subtle: rgba(255, 255, 255, 0.04);
+        --color-primary: #38bdf8;
+        --color-primary-strong: #0ea5e9;
+        --color-primary-light: rgba(56, 189, 248, 0.12);
+        --color-primary-glow: rgba(56, 189, 248, 0.25);
+        --color-on-primary: #090a0f;
+        --color-accent: #818cf8;
+        --color-accent-light: rgba(129, 140, 248, 0.12);
+        --color-success: #34d399;
+        --color-success-bg: rgba(52, 211, 153, 0.12);
+        --color-warning: #fbbf24;
+        --color-danger: #f87171;
+        --color-danger-bg: rgba(248, 113, 113, 0.12);
+        --color-focus-ring: #38bdf8;
+        --color-overlay: rgba(4, 5, 8, 0.8);
+        --grid-line-color: rgba(255, 255, 255, 0.03);
+    }
+}
+
+:root[data-theme='dark'] {
+    --color-background: #090a0f;
+    --color-background-subtle: #0d0f15;
+    --color-surface: #11141c;
+    --color-surface-elevated: #161b26;
+    --color-surface-hover: #1c2230;
+    --color-surface-alt: #131722;
+    --color-text: #f3f6fc;
+    --color-text-secondary: #cbd5e1;
+    --color-text-muted: #8896ab;
+    --color-text-subtle: #4f5d73;
+    --color-border: rgba(255, 255, 255, 0.08);
+    --color-border-hover: rgba(255, 255, 255, 0.18);
+    --color-border-subtle: rgba(255, 255, 255, 0.04);
+    --color-primary: #38bdf8;
+    --color-primary-strong: #0ea5e9;
+    --color-primary-light: rgba(56, 189, 248, 0.12);
+    --color-primary-glow: rgba(56, 189, 248, 0.25);
+    --color-on-primary: #090a0f;
+    --color-accent: #818cf8;
+    --color-accent-light: rgba(129, 140, 248, 0.12);
+    --color-success: #34d399;
+    --color-success-bg: rgba(52, 211, 153, 0.12);
+    --color-warning: #fbbf24;
+    --color-danger: #f87171;
+    --color-danger-bg: rgba(248, 113, 113, 0.12);
+    --color-focus-ring: #38bdf8;
+    --color-overlay: rgba(4, 5, 8, 0.8);
+    --grid-line-color: rgba(255, 255, 255, 0.03);
+}
