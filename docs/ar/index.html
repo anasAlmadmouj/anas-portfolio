@@ -1,0 +1,2933 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+    <script>
+        (function () {
+            try {
+                var stored = localStorage.getItem('theme');
+                var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+                document.documentElement.setAttribute('data-theme', theme);
+                document.documentElement.style.colorScheme = theme;
+            } catch (e) {}
+        })();
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="أنس المدموج، مطور Flutter أول ومهندس تطبيقات بخبرة تتجاوز 5 سنوات في تطوير تطبيقات جاهزة للإنتاج باستخدام Flutter وDart، مع خبرة في Clean Architecture وواجهات البرمجة والتكاملات والخدمات الخلفية.">
+    <title>Anas Almadmouj — Senior Flutter Developer</title>
+
+    <link rel="icon" href="../favicon.ico" sizes="any">
+
+    
+            <link rel="canonical" href="https://anasalmadmouj.github.io/anas-portfolio/ar/index.html">
+        <link rel="alternate" hreflang="en" href="https://anasalmadmouj.github.io/anas-portfolio/en/index.html">
+        <link rel="alternate" hreflang="ar" href="https://anasalmadmouj.github.io/anas-portfolio/ar/index.html">
+        <link rel="alternate" hreflang="x-default" href="https://anasalmadmouj.github.io/anas-portfolio/en/index.html">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Anas Almadmouj">
+    <meta property="og:locale" content="ar_AR">
+            <meta property="og:url" content="https://anasalmadmouj.github.io/anas-portfolio/ar/index.html">
+        <meta property="og:title" content="Anas Almadmouj — Senior Flutter Developer">
+    <meta property="og:description" content="أنس المدموج، مطور Flutter أول ومهندس تطبيقات بخبرة تتجاوز 5 سنوات في تطوير تطبيقات جاهزة للإنتاج باستخدام Flutter وDart، مع خبرة في Clean Architecture وواجهات البرمجة والتكاملات والخدمات الخلفية.">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Anas Almadmouj — Senior Flutter Developer">
+    <meta name="twitter:description" content="أنس المدموج، مطور Flutter أول ومهندس تطبيقات بخبرة تتجاوز 5 سنوات في تطوير تطبيقات جاهزة للإنتاج باستخدام Flutter وDart، مع خبرة في Clean Architecture وواجهات البرمجة والتكاملات والخدمات الخلفية.">
+    
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Anas Almadmouj","jobTitle":"Senior Flutter Developer","url":"https://anasalmadmouj.github.io/anas-portfolio/ar/index.html","email":"mailto:almadmouj@gmail.com","address":{"@type":"PostalAddress","addressCountry":"JO"},"sameAs":["https://www.linkedin.com/in/anas-al-madmouj-0979271aa/"]}</script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Readex+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="preload" as="style" href="../build/assets/app-CBgv0wpJ.css" /><link rel="modulepreload" as="script" href="../build/assets/app-DHFa6xGW.js" /><link rel="stylesheet" href="../build/assets/app-CBgv0wpJ.css" /><script type="module" src="../build/assets/app-DHFa6xGW.js"></script>    </head>
+<body>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+    <a href="#main-content" class="skip-link">تخطَّ إلى المحتوى</a>
+
+    <header class="navbar" data-navbar>
+    <div class="container navbar__inner">
+        
+        <a href="#home" class="navbar__brand" aria-label="Anas Almadmouj">
+            <span class="navbar__brand-mark" aria-hidden="true">
+                <span class="navbar__brand-glyph">~/</span>
+            </span>
+            <div class="navbar__brand-text">
+                <span class="navbar__brand-name">Anas Almadmouj</span>
+                <span class="navbar__brand-tag">flutter.dev</span>
+            </div>
+        </a>
+
+        
+        <nav class="navbar__nav" aria-label="التنقل الرئيسي">
+            <div class="navbar__dock">
+                <ul class="navbar__links">
+                    <li>
+                        <a 
+                            href="#home" 
+                            class="navbar__link is-active"
+                            aria-current="page"
+                        >
+                            الرئيسية
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about" class="navbar__link">
+                            نبذة عني
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="#projects" 
+                            class="navbar__link "
+                            
+                        >
+                            المشاريع
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#experience" class="navbar__link">
+                            الخبرة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="navbar__link">
+                            المهارات
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#services" class="navbar__link">
+                            الخدمات
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="navbar__link">
+                            تواصل
+                        </a>
+                    </li>
+                </ul>
+                <div class="navbar__indicator" data-nav-indicator aria-hidden="true"></div>
+            </div>
+        </nav>
+
+        
+        <div class="navbar__actions">
+            <div class="navbar__status" title="متاح لفرص عمل جديدة">
+                <span class="navbar__status-ping" aria-hidden="true"></span>
+                <span class="navbar__status-dot"></span>
+                <span class="navbar__status-text">متاح لفرص عمل جديدة</span>
+            </div>
+
+            <a
+    href="../en/index.html"
+    class="lang-switch"
+    aria-label="التبديل إلى الإنجليزية"
+    hreflang="en"
+>
+    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon lang-switch__icon"
+>
+                <circle cx="12" cy="12" r="9" /><path d="M3 12h18" /><path d="M12 3c2.5 2.5 3.8 5.7 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.7-3.8-9s1.3-6.5 3.8-9z" />
+            </svg>
+    <span class="lang-switch__text">EN</span>
+</a>
+
+            <button
+    type="button"
+    class="theme-switch"
+    data-theme-toggle
+    aria-label="تغيير المظهر"
+>
+    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon theme-switch__icon theme-switch__icon--sun"
+>
+                <circle cx="12" cy="12" r="4" /><path d="M12 2v3" /><path d="M12 19v3" /><path d="M4.2 4.2l2.1 2.1" /><path d="M17.7 17.7l2.1 2.1" /><path d="M2 12h3" /><path d="M19 12h3" /><path d="M4.2 19.8l2.1-2.1" /><path d="M17.7 6.3l2.1-2.1" />
+            </svg>
+    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon theme-switch__icon theme-switch__icon--moon"
+>
+                <path d="M20 14.5A8 8 0 1 1 9.5 4 6.5 6.5 0 0 0 20 14.5z" />
+            </svg>
+</button>
+
+            
+            <button
+                type="button"
+                class="navbar__menu-toggle"
+                data-menu-toggle
+                aria-expanded="false"
+                aria-controls="mobile-nav-overlay"
+                aria-label="فتح القائمة"
+            >
+                <span class="navbar__hamburger" aria-hidden="true">
+                    <span class="navbar__hamburger-line"></span>
+                    <span class="navbar__hamburger-line"></span>
+                    <span class="navbar__hamburger-line"></span>
+                </span>
+            </button>
+        </div>
+    </div>
+
+    
+    <div 
+        class="navbar__mobile-overlay" 
+        id="mobile-nav-overlay" 
+        data-mobile-menu 
+        hidden 
+        aria-modal="true" 
+        role="dialog" 
+        aria-label="التنقل الرئيسي"
+    >
+        <div class="navbar__mobile-backdrop" data-menu-backdrop></div>
+        
+        <div class="navbar__mobile-dialog">
+            <div class="navbar__mobile-header container">
+                <div class="navbar__mobile-brand">
+                    <span class="navbar__brand-mark">~/</span>
+                    <span class="navbar__brand-name">Anas Almadmouj</span>
+                </div>
+                
+                <button type="button" class="navbar__mobile-close" data-menu-close aria-label="إغلاق القائمة">
+                    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="22"
+    height="22"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <path d="M6 6l12 12" /><path d="M18 6L6 18" />
+            </svg>
+                </button>
+            </div>
+
+            <div class="navbar__mobile-body container">
+                <nav class="navbar__mobile-nav">
+                    <ul class="navbar__mobile-links">
+                        <li class="navbar__mobile-item" style="--item-index: 1">
+                            <a href="#home" class="navbar__mobile-link is-active">
+                                <span class="navbar__mobile-num">01</span>
+                                <span class="navbar__mobile-label">الرئيسية</span>
+                                <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon icon--directional navbar__mobile-arrow"
+>
+                <path d="M5 12h14" /><path d="M13 6l6 6-6 6" />
+            </svg>
+                            </a>
+                        </li>
+                        <li class="navbar__mobile-item" style="--item-index: 2">
+                            <a href="#about" class="navbar__mobile-link">
+                                <span class="navbar__mobile-num">02</span>
+                                <span class="navbar__mobile-label">نبذة عني</span>
+                                <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon icon--directional navbar__mobile-arrow"
+>
+                <path d="M5 12h14" /><path d="M13 6l6 6-6 6" />
+            </svg>
+                            </a>
+                        </li>
+                        <li class="navbar__mobile-item" style="--item-index: 3">
+                            <a href="#projects" class="navbar__mobile-link ">
+                                <span class="navbar__mobile-num">03</span>
+                                <span class="navbar__mobile-label">المشاريع</span>
+                                <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon icon--directional navbar__mobile-arrow"
+>
+                <path d="M5 12h14" /><path d="M13 6l6 6-6 6" />
+            </svg>
+                            </a>
+                        </li>
+                        <li class="navbar__mobile-item" style="--item-index: 4">
+                            <a href="#experience" class="navbar__mobile-link">
+                                <span class="navbar__mobile-num">04</span>
+                                <span class="navbar__mobile-label">الخبرة</span>
+                                <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon icon--directional navbar__mobile-arrow"
+>
+                <path d="M5 12h14" /><path d="M13 6l6 6-6 6" />
+            </svg>
+                            </a>
+                        </li>
+                        <li class="navbar__mobile-item" style="--item-index: 5">
+                            <a href="#skills" class="navbar__mobile-link">
+                                <span class="navbar__mobile-num">05</span>
+                                <span class="navbar__mobile-label">المهارات</span>
+                                <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon icon--directional navbar__mobile-arrow"
+>
+                <path d="M5 12h14" /><path d="M13 6l6 6-6 6" />
+            </svg>
+                            </a>
+                        </li>
+                        <li class="navbar__mobile-item" style="--item-index: 6">
+                            <a href="#services" class="navbar__mobile-link">
+                                <span class="navbar__mobile-num">06</span>
+                                <span class="navbar__mobile-label">الخدمات</span>
+                                <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon icon--directional navbar__mobile-arrow"
+>
+                <path d="M5 12h14" /><path d="M13 6l6 6-6 6" />
+            </svg>
+                            </a>
+                        </li>
+                        <li class="navbar__mobile-item" style="--item-index: 7">
+                            <a href="#contact" class="navbar__mobile-link">
+                                <span class="navbar__mobile-num">07</span>
+                                <span class="navbar__mobile-label">تواصل</span>
+                                <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon icon--directional navbar__mobile-arrow"
+>
+                <path d="M5 12h14" /><path d="M13 6l6 6-6 6" />
+            </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="navbar__mobile-footer container">
+                <div class="navbar__mobile-status">
+                    <span class="navbar__status-ping" aria-hidden="true"></span>
+                    <span class="navbar__status-dot"></span>
+                    <span>متاح لفرص عمل جديدة</span>
+                </div>
+
+                <div class="navbar__mobile-actions">
+                    <a
+    href="../en/index.html"
+    class="lang-switch"
+    aria-label="التبديل إلى الإنجليزية"
+    hreflang="en"
+>
+    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon lang-switch__icon"
+>
+                <circle cx="12" cy="12" r="9" /><path d="M3 12h18" /><path d="M12 3c2.5 2.5 3.8 5.7 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.7-3.8-9s1.3-6.5 3.8-9z" />
+            </svg>
+    <span class="lang-switch__text">EN</span>
+</a>
+
+                    <button
+    type="button"
+    class="theme-switch"
+    data-theme-toggle
+    aria-label="تغيير المظهر"
+>
+    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon theme-switch__icon theme-switch__icon--sun"
+>
+                <circle cx="12" cy="12" r="4" /><path d="M12 2v3" /><path d="M12 19v3" /><path d="M4.2 4.2l2.1 2.1" /><path d="M17.7 17.7l2.1 2.1" /><path d="M2 12h3" /><path d="M19 12h3" /><path d="M4.2 19.8l2.1-2.1" /><path d="M17.7 6.3l2.1-2.1" />
+            </svg>
+    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon theme-switch__icon theme-switch__icon--moon"
+>
+                <path d="M20 14.5A8 8 0 1 1 9.5 4 6.5 6.5 0 0 0 20 14.5z" />
+            </svg>
+</button>
+                </div>
+
+                <a href="#contact" class="btn btn--primary navbar__mobile-cta">
+                    <span>تواصل معي</span>
+                    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon icon--directional"
+>
+                <path d="M5 12h14" /><path d="M13 6l6 6-6 6" />
+            </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <main id="main-content">
+            <section id="home" class="section hero">
+    <div class="container hero__grid">
+        <div class="hero__content" data-reveal>
+            <div class="hero__status">
+                <span class="hero__status-pulse">
+                    <span class="hero__status-ping"></span>
+                    <span class="hero__status-dot"></span>
+                </span>
+                <span class="hero__status-text">Senior Flutter Developer · عمّان، الأردن</span>
+                <span class="hero__status-badge meta">v3.24</span>
+            </div>
+
+            <h1 class="hero__title">Anas Almadmouj</h1>
+            <p class="hero__lead">مهندس برمجيات بخبرة تتجاوز 5 سنوات في التطوير الاحترافي، أبني تطبيقات Flutter قابلة للتوسع وجاهزة للإنتاج — مع خبرة عملية في تسليم أكثر من 15 تطبيقًا ومشروع Production، شملت API Integrations وFirebase وReal-Time Systems وPayment Integrations وPerformance Optimization وProduction Deployment.</p>
+
+            <div class="hero__actions">
+                <a href="#projects" class="btn btn--primary btn--lg hero__btn-primary">
+                    <span>استعرض المشاريع</span>
+                    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon icon--directional hero__btn-arrow"
+>
+                <path d="M5 12h14" /><path d="M13 6l6 6-6 6" />
+            </svg>
+                </a>
+                <a href="#contact" class="btn btn--ghost btn--lg">
+                    <span>تواصل معي</span>
+                </a>
+                            </div>
+
+            <div class="hero__stats" data-card-glow>
+                <div class="hero__stat">
+                    <span class="hero__stat-num">5+</span>
+                    <span class="hero__stat-label">سنوات من الخبرة</span>
+                </div>
+                <div class="hero__stat-divider"></div>
+                <div class="hero__stat">
+                    <span class="hero__stat-num">15+</span>
+                    <span class="hero__stat-label">تطبيقًا تم تطويره</span>
+                </div>
+                <div class="hero__stat-divider"></div>
+                <div class="hero__stat">
+                    <span class="hero__stat-num">Production</span>
+                    <span class="hero__stat-label">تطبيقات جاهزة للإنتاج</span>
+                </div>
+                <div class="hero__stat-divider"></div>
+                <div class="hero__stat">
+                    <span class="hero__stat-num">End-to-End</span>
+                    <span class="hero__stat-label">تطوير متكامل</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero__visual" data-reveal>
+            <div class="hero__console" data-tilt-card data-card-glow>
+                <div class="hero__console-header">
+                    <div class="hero__console-dots" aria-hidden="true">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="hero__console-meta">
+                        <span class="meta-tag"><svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="12"
+    height="12"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <line x1="6" y1="3" x2="6" y2="15" /><circle cx="18" cy="6" r="3" /><circle cx="6" cy="18" r="3" /><path d="M18 9a9 9 0 0 1-9 9" />
+            </svg>
+ main</span>
+                        <span class="meta-tag meta-tag--hash">7f3a9e2</span>
+                    </div>
+                    <div class="hero__console-tabs" role="tablist">
+                        <button type="button" class="hero__console-tab is-active" data-tab-target="tab-arch" role="tab" aria-selected="true">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="13"
+    height="13"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <path d="M12 3l9 5-9 5-9-5 9-5z" /><path d="M3 13l9 5 9-5" />
+            </svg>
+                            <span>الهندسة المعمارية</span>
+                        </button>
+                        <button type="button" class="hero__console-tab" data-tab-target="tab-code" role="tab" aria-selected="false">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="13"
+    height="13"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <polyline points="4 17 10 11 4 5" /><line x1="12" y1="19" x2="20" y2="19" />
+            </svg>
+                            <span>Dart / BLoC</span>
+                        </button>
+                        <button type="button" class="hero__console-tab" data-tab-target="tab-perf" role="tab" aria-selected="false">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="13"
+    height="13"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <path d="M12 12l4-3" /><circle cx="12" cy="12" r="9" /><path d="M7 15a6 6 0 0 1 10 0" />
+            </svg>
+                            <span>مؤشرات الأداء</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hero__console-body">
+                    <!-- Tab 1: Architecture with Animated Data-Flow -->
+                    <div class="hero__tab-content is-active" id="tab-arch" role="tabpanel">
+                        <div class="arch-diagram">
+                            <div class="arch-layer arch-layer--presentation">
+                                <div class="arch-layer__badge">
+                                    <span class="arch-layer__pill">UI & State</span>
+                                    <span class="arch-layer__title">Presentation Layer</span>
+                                </div>
+                                <div class="arch-layer__items">
+                                    <span class="arch-chip">Flutter UI</span>
+                                    <span class="arch-chip">BLoC / Cubit</span>
+                                    <span class="arch-chip">Riverpod</span>
+                                </div>
+                            </div>
+
+                            <div class="arch-connector">
+                                <div class="arch-connector__track">
+                                    <span class="arch-particle arch-particle--down"></span>
+                                    <span class="arch-particle arch-particle--up"></span>
+                                </div>
+                            </div>
+
+                            <div class="arch-layer arch-layer--domain">
+                                <div class="arch-layer__badge">
+                                    <span class="arch-layer__pill">Core Logic</span>
+                                    <span class="arch-layer__title">Domain Layer</span>
+                                </div>
+                                <div class="arch-layer__items">
+                                    <span class="arch-chip">Use Cases</span>
+                                    <span class="arch-chip">Pure Entities</span>
+                                    <span class="arch-chip">Repository Contracts</span>
+                                </div>
+                            </div>
+
+                            <div class="arch-connector">
+                                <div class="arch-connector__track">
+                                    <span class="arch-particle arch-particle--down"></span>
+                                    <span class="arch-particle arch-particle--up"></span>
+                                </div>
+                            </div>
+
+                            <div class="arch-layer arch-layer--data">
+                                <div class="arch-layer__badge">
+                                    <span class="arch-layer__pill">Sources</span>
+                                    <span class="arch-layer__title">Data Layer</span>
+                                </div>
+                                <div class="arch-layer__items">
+                                    <span class="arch-chip">REST APIs / Dio</span>
+                                    <span class="arch-chip">SQLite / Hive</span>
+                                    <span class="arch-chip">Firebase</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab 2: Code Snippet & Interactive State Transition -->
+                    <div class="hero__tab-content" id="tab-code" role="tabpanel" hidden>
+                        <div class="code-interactive-bar">
+                            <span class="code-state-label">حالة التطبيق الحالية:</span>
+                            <div class="code-state-pills">
+                                <button type="button" class="state-pill is-active" data-state="initial">التهيئة</button>
+                                <button type="button" class="state-pill" data-state="loading">جاري التحميل</button>
+                                <button type="button" class="state-pill" data-state="success">تم تسجيل الدخول</button>
+                            </div>
+                            <span class="code-state-output" id="state-output">AuthState.initial()</span>
+                        </div>
+
+                        <pre class="code-preview"><code><span class="code-kw">class</span> <span class="code-class">AuthBloc</span> <span class="code-kw">extends</span> <span class="code-class">Bloc</span>&lt;<span class="code-type">AuthEvent</span>, <span class="code-type">AuthState</span>&gt; {
+  <span class="code-kw">final</span> <span class="code-type">SignInUseCase</span> <span class="code-var">_signIn</span>;
+
+  <span class="code-class">AuthBloc</span>({<span class="code-kw">required</span> <span class="code-type">SignInUseCase</span> signIn})
+      : <span class="code-var">_signIn</span> = signIn,
+        <span class="code-kw">super</span>(<span class="code-kw">const</span> <span class="code-class">AuthState</span>.<span class="code-fn">initial</span>()) {
+    <span class="code-fn">on</span>&lt;<span class="code-class">SignInSubmitted</span>&gt;(_onSignInSubmitted);
+  }
+
+  <span class="code-type">Future</span>&lt;<span class="code-type">void</span>&gt; _onSignInSubmitted(
+    <span class="code-class">SignInSubmitted</span> event,
+    <span class="code-class">Emitter</span>&lt;<span class="code-type">AuthState</span>&gt; emit,
+  ) <span class="code-kw">async</span> {
+    <span class="code-fn">emit</span>(<span class="code-kw">const</span> <span class="code-class">AuthState</span>.<span class="code-fn">loading</span>());
+    <span class="code-kw">final</span> result = <span class="code-kw">await</span> <span class="code-var">_signIn</span>(event.params);
+    result.<span class="code-fn">fold</span>(
+      (failure) =&gt; <span class="code-fn">emit</span>(<span class="code-class">AuthState</span>.<span class="code-fn">error</span>(failure.message)),
+      (user) =&gt; <span class="code-fn">emit</span>(<span class="code-class">AuthState</span>.<span class="code-fn">authenticated</span>(user)),
+    );
+  }
+}<span class="typing-caret"></span></code></pre>
+                    </div>
+
+                    <!-- Tab 3: Performance Metrics -->
+                    <div class="hero__tab-content" id="tab-perf" role="tabpanel" hidden>
+                        <div class="perf-metrics">
+                            <div class="perf-card">
+                                <div class="perf-card__header">
+                                    <span class="perf-card__name">معدل الإطارات</span>
+                                    <span class="perf-card__value">60.0 FPS</span>
+                                </div>
+                                <div class="perf-bar"><div class="perf-bar__fill" style="width: 100%;"></div></div>
+                                <span class="perf-card__meta">استهداف أداء سلس بمعدل تنفيذ إطار 16.6 مللي ثانية دون تقطّع</span>
+                            </div>
+
+                            <div class="perf-card">
+                                <div class="perf-card__header">
+                                    <span class="perf-card__name">اختبارات Unit وBLoC</span>
+                                    <span class="perf-card__value">88.5%</span>
+                                </div>
+                                <div class="perf-bar"><div class="perf-bar__fill perf-bar__fill--cyan" style="width: 88.5%;"></div></div>
+                                <span class="perf-card__meta">اختبار منطق التطبيق بشكل حتمي وموثوق</span>
+                            </div>
+
+                            <div class="perf-card">
+                                <div class="perf-card__header">
+                                    <span class="perf-card__name">وقت تشغيل التطبيق</span>
+                                    <span class="perf-card__value">&lt; 380 ms</span>
+                                </div>
+                                <div class="perf-bar"><div class="perf-bar__fill perf-bar__fill--emerald" style="width: 95%;"></div></div>
+                                <span class="perf-card__meta">تحسين وقت بدء التشغيل وإزالة الـsingletons غير الضرورية</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero__console-footer">
+                    <div class="console-status">
+                        <span class="console-status__dot"></span>
+                        <span class="console-status__text">Clean Architecture · إصدار موثوق</span>
+                    </div>
+                    <span class="console-version">زمن الاستجابة: 24ms · Flutter 3.24 · Dart 3.5</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="about" class="section about">
+    <div class="container">
+        <div class="section-header" data-reveal>
+            <span class="section-header__tag">02 · نبذة عني</span>
+            <h2 class="section-header__title">أبني منتجات Mobile جاهزة للإنتاج باستخدام Flutter.</h2>
+        </div>
+
+        <div class="about__grid">
+            <div class="about__narrative" data-reveal>
+                <p class="about__lead">أنا Software Engineer وSenior Flutter Developer بخبرة أكثر من 5 سنوات في التطوير الاحترافي، مع تركيز أساسي على بناء وصيانة تطبيقات Mobile جاهزة للإنتاج. لدي خبرة عملية في تطوير أكثر من 15 تطبيقًا ومشروع Production، باستخدام Flutter وDart وClean Architecture وBLoC/Cubit وFirebase وREST APIs وWebSockets وPayment Gateways وSQL وGit وPerformance Optimization. كما منحتني خبرتي المبكرة في تطوير Web باستخدام ASP.NET/.NET وSQL أساسًا جيدًا في فهم Backend Systems وقواعد البيانات العلائقية وكيفية ارتباط تطبيقات Mobile بالأنظمة البرمجية الأخرى. أتعامل مع الهندسة البرمجية كعملية تعلّم وتطوّر مستمرة، وأستمتع بحل المشاكل التقنية المعقدة بقدر استمتاعي بتسليم منتج نظيف وموثوق.</p>
+                <div class="about__quote">
+                    <div class="about__quote-line"></div>
+                    <p class="about__quote-text">
+                        "الكود النظيف ليس رفاهية شكلية، بل استراتيجية عمل تُحقّق المرونة وسرعة التطوير دون التضحية بالاستقرار."
+                    </p>
+                </div>
+            </div>
+
+            <div class="about__pillars">
+                <div class="about__card" data-reveal>
+                    <div class="about__card-header">
+                        <div class="about__card-icon">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <path d="M12 3l9 5-9 5-9-5 9-5z" /><path d="M3 13l9 5 9-5" />
+            </svg>
+                        </div>
+                        <h3 class="about__card-title">كيف أعمل</h3>
+                    </div>
+                    <p class="about__card-text">أعمل على مختلف مراحل دورة حياة التطبيق، بدءًا من فهم المتطلبات وتصميم الـArchitecture وحتى التطوير وAPI Integration والاختبار والـDeployment والصيانة المستمرة. أعمل بشكل مريح سواء بشكل مستقل مع العملاء، حيث أترجم متطلبات العمل مباشرة إلى حلول تقنية، أو ضمن فريق بالتعاون الوثيق مع مطوّري الـbackend والمصممين وأصحاب المنتج.</p>
+                </div>
+
+                <div class="about__card" data-reveal>
+                    <div class="about__card-header">
+                        <div class="about__card-icon about__card-icon--accent">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <rect x="7" y="2" width="10" height="20" rx="2" /><path d="M11 18h2" />
+            </svg>
+                        </div>
+                        <h3 class="about__card-title">ما أركّز عليه</h3>
+                    </div>
+                    <p class="about__card-text">أركّز على بناء تطبيقات ليست فقط عملية، بل أيضًا قابلة للصيانة والتوسع وذات أداء جيد وموثوقة وجاهزة لبيئات Production الحقيقية، دون إغفال تجربة استخدام سلسة ومدروسة.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about__progression" data-reveal>
+            <div class="progression-item">
+                <span class="progression-step">01</span>
+                <div class="progression-content">
+                    <span class="progression-role">مطوّر</span>
+                    <span class="progression-desc">بناء أساس قوي واكتساب خبرة عملية وحل المشاكل التقنية الواقعية.</span>
+                </div>
+            </div>
+            <div class="progression-arrow" aria-hidden="true">→</div>
+
+            <div class="progression-item">
+                <span class="progression-step">02</span>
+                <div class="progression-content">
+                    <span class="progression-role">مهندس</span>
+                    <span class="progression-desc">تصميم أنظمة موثوقة وArchitecture قابلة للتوسع.</span>
+                </div>
+            </div>
+            <div class="progression-arrow" aria-hidden="true">→</div>
+
+            <div class="progression-item">
+                <span class="progression-step">03</span>
+                <div class="progression-content">
+                    <span class="progression-role">مهندس معماري</span>
+                    <span class="progression-desc">اتخاذ القرارات التقنية التي تحسن قابلية الصيانة والأداء وقابلية التوسع.</span>
+                </div>
+            </div>
+            <div class="progression-arrow" aria-hidden="true">→</div>
+
+            <div class="progression-item progression-item--highlight">
+                <span class="progression-step">04</span>
+                <div class="progression-content">
+                    <span class="progression-role">باني منتجات</span>
+                    <span class="progression-desc">تحويل المتطلبات والأفكار إلى منتجات جاهزة للإنتاج من التطوير وحتى الـDeployment.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="about__stack-wrapper" data-reveal>
+            <div class="about__stack-header">
+                <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <rect x="4" y="4" width="16" height="16" rx="2" /><rect x="9" y="9" width="6" height="6" /><line x1="9" y1="1" x2="9" y2="4" /><line x1="15" y1="1" x2="15" y2="4" /><line x1="9" y1="20" x2="9" y2="23" /><line x1="15" y1="20" x2="15" y2="23" /><line x1="20" y1="9" x2="23" y2="9" /><line x1="20" y1="14" x2="23" y2="14" /><line x1="1" y1="9" x2="4" y2="9" /><line x1="1" y1="14" x2="4" y2="14" />
+            </svg>
+                <span class="meta">التقنيات الأساسية</span>
+            </div>
+            <ul class="about__stack" aria-label="التقنيات الأساسية">
+                                    <li>
+                        <span class="about__stack-dot"></span>
+                        <span>Flutter</span>
+                    </li>
+                                    <li>
+                        <span class="about__stack-dot"></span>
+                        <span>Dart</span>
+                    </li>
+                                    <li>
+                        <span class="about__stack-dot"></span>
+                        <span>BLoC / Cubit</span>
+                    </li>
+                                    <li>
+                        <span class="about__stack-dot"></span>
+                        <span>GetX</span>
+                    </li>
+                                    <li>
+                        <span class="about__stack-dot"></span>
+                        <span>Firebase</span>
+                    </li>
+                                    <li>
+                        <span class="about__stack-dot"></span>
+                        <span>REST APIs</span>
+                    </li>
+                                    <li>
+                        <span class="about__stack-dot"></span>
+                        <span>WebSockets</span>
+                    </li>
+                                    <li>
+                        <span class="about__stack-dot"></span>
+                        <span>Payment Gateways</span>
+                    </li>
+                                    <li>
+                        <span class="about__stack-dot"></span>
+                        <span>SQL</span>
+                    </li>
+                                    <li>
+                        <span class="about__stack-dot"></span>
+                        <span>Clean Architecture</span>
+                    </li>
+                                    <li>
+                        <span class="about__stack-dot"></span>
+                        <span>Git / GitHub</span>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</section>
+    <section id="projects" class="section projects">
+    <div class="container">
+        <div class="projects__header" data-reveal>
+            <div class="section-header">
+                <span class="section-header__tag">03 · أعمال مختارة</span>
+                <h2 class="section-header__title">المشاريع</h2>
+            </div>
+            <a href="projects.html" class="projects__view-all btn btn--secondary">
+                <span>عرض جميع المشاريع</span>
+                <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon icon--directional"
+>
+                <path d="M5 12h14" /><path d="M13 6l6 6-6 6" />
+            </svg>
+            </a>
+        </div>
+
+                    <div class="projects__showcase-list">
+                                    <article class="featured-case-study " data-reveal data-card-glow>
+    <div class="featured-case-study__grid">
+        
+        <div class="featured-case-study__info">
+            <div class="featured-case-study__meta-row">
+                <span class="featured-case-study__index">
+                    01
+                </span>
+                <span class="featured-case-study__category">سياحة وتواصل اجتماعي</span>
+                <span class="featured-case-study__dot">·</span>
+                <span class="featured-case-study__year">2024</span>
+                <span class="featured-case-study__dot">·</span>
+                <span class="featured-case-study__status">مكتمل</span>
+            </div>
+
+            <h3 class="featured-case-study__title">
+                <a href="projects/tourstify.html" class="featured-case-study__title-link">
+                    Tourstify
+                    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon icon--directional featured-case-study__title-icon"
+>
+                <path d="M7 17L17 7" /><path d="M7 7h10v10" />
+            </svg>
+                </a>
+            </h3>
+
+            <p class="featured-case-study__description">
+                منصة اجتماعية وتطبيق سياحي متكامل للتواصل بين المسافرين، ومطابقة اهتمامات السفر، والتخطيط للرحلات مع ميزات المراسلة الصوتية وتحويل الصوت إلى نص.
+            </p>
+
+            <div class="featured-case-study__role-badge">
+                <span class="featured-case-study__role-label">الدور:</span>
+                <span class="featured-case-study__role-val">مطور فلاتر رئيسي (Lead Flutter Developer)</span>
+            </div>
+
+            <div class="featured-case-study__highlights">
+                <ul class="featured-case-study__resp-list">
+                                            <li>
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon featured-case-study__check-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                            <span>بناء وتصميم البنية المعمارية لتطبيق فلاتر بالكامل وفق مبادئ Clean Architecture ونمط BLoC.</span>
+                        </li>
+                                            <li>
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon featured-case-study__check-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                            <span>تطوير محرك المراسلة الصوتية الفورية مع رسم الموجات الصوتية التفاعلية وعناصر التحكم في التشغيل.</span>
+                        </li>
+                                            <li>
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon featured-case-study__check-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                            <span>هندسة خوارزميات استكشاف المسافرين ومطابقة الشخصيات مع فلاتر ديناميكية وإدارة طلبات التواصل.</span>
+                        </li>
+                                    </ul>
+            </div>
+
+            <div class="featured-case-study__tech-wrap">
+                <ul class="featured-case-study__tech-list">
+                                            <li>Flutter</li>
+                                            <li>Dart</li>
+                                            <li>BLoC</li>
+                                            <li>Audio Waveforms</li>
+                                            <li>REST APIs</li>
+                                            <li>Firebase</li>
+                                            <li>Payment Gateways</li>
+                                            <li>AI Chatbot</li>
+                                    </ul>
+            </div>
+
+            <div class="featured-case-study__action">
+                <a href="projects/tourstify.html" class="btn btn--primary">
+                    <span>نظرة عامة · Case Study</span>
+                    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon icon--directional"
+>
+                <path d="M5 12h14" /><path d="M13 6l6 6-6 6" />
+            </svg>
+                </a>
+            </div>
+        </div>
+
+        
+        <div class="featured-case-study__media">
+            <div class="media-showcase " data-media-showcase>
+            <div class="media-showcase__stage">
+            
+            <div class="media-showcase__glow" aria-hidden="true"></div>
+
+            
+            <div class="media-showcase__devices">
+                                    <div class="media-showcase__device media-showcase__device--tertiary" aria-hidden="true">
+                        <div class="device-phone ">
+    <div class="device-phone__bezel">
+        <div class="device-phone__screen">
+            <img 
+                src="../images/projects/tourstify/3.jpeg" 
+                alt="Tourstify Screen 3" 
+                class="device-phone__img"
+                loading="lazy"
+                decoding="async"
+            />
+        </div>
+    </div>
+</div>
+                    </div>
+                
+                                    <div class="media-showcase__device media-showcase__device--secondary" aria-hidden="true">
+                        <div class="device-phone ">
+    <div class="device-phone__bezel">
+        <div class="device-phone__screen">
+            <img 
+                src="../images/projects/tourstify/2.jpeg" 
+                alt="Tourstify Screen 2" 
+                class="device-phone__img"
+                loading="lazy"
+                decoding="async"
+            />
+        </div>
+    </div>
+</div>
+                    </div>
+                
+                <div class="media-showcase__device media-showcase__device--primary" data-showcase-primary>
+                    <div class="device-phone ">
+    <div class="device-phone__bezel">
+        <div class="device-phone__screen">
+            <img 
+                src="../images/projects/tourstify/1.jpeg" 
+                alt="Tourstify Main Screen" 
+                class="device-phone__img"
+                loading="eager"
+                decoding="async"
+            />
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+
+        
+                    <div class="media-showcase__gallery-strip" aria-label="Screenshots">
+                                    <button 
+                        type="button" 
+                        class="media-showcase__thumb-btn is-active" 
+                        data-shot-src="../images/projects/tourstify/1.jpeg"
+                        aria-label="View screenshot 1"
+                    >
+                        <img src="../images/projects/tourstify/1.jpeg" alt="" class="media-showcase__thumb-img" loading="lazy" />
+                        <span class="media-showcase__thumb-index">01</span>
+                    </button>
+                                    <button 
+                        type="button" 
+                        class="media-showcase__thumb-btn " 
+                        data-shot-src="../images/projects/tourstify/2.jpeg"
+                        aria-label="View screenshot 2"
+                    >
+                        <img src="../images/projects/tourstify/2.jpeg" alt="" class="media-showcase__thumb-img" loading="lazy" />
+                        <span class="media-showcase__thumb-index">02</span>
+                    </button>
+                                    <button 
+                        type="button" 
+                        class="media-showcase__thumb-btn " 
+                        data-shot-src="../images/projects/tourstify/3.jpeg"
+                        aria-label="View screenshot 3"
+                    >
+                        <img src="../images/projects/tourstify/3.jpeg" alt="" class="media-showcase__thumb-img" loading="lazy" />
+                        <span class="media-showcase__thumb-index">03</span>
+                    </button>
+                                    <button 
+                        type="button" 
+                        class="media-showcase__thumb-btn " 
+                        data-shot-src="../images/projects/tourstify/4.jpeg"
+                        aria-label="View screenshot 4"
+                    >
+                        <img src="../images/projects/tourstify/4.jpeg" alt="" class="media-showcase__thumb-img" loading="lazy" />
+                        <span class="media-showcase__thumb-index">04</span>
+                    </button>
+                                    <button 
+                        type="button" 
+                        class="media-showcase__thumb-btn " 
+                        data-shot-src="../images/projects/tourstify/5.jpeg"
+                        aria-label="View screenshot 5"
+                    >
+                        <img src="../images/projects/tourstify/5.jpeg" alt="" class="media-showcase__thumb-img" loading="lazy" />
+                        <span class="media-showcase__thumb-index">05</span>
+                    </button>
+                                    <button 
+                        type="button" 
+                        class="media-showcase__thumb-btn " 
+                        data-shot-src="../images/projects/tourstify/6.jpeg"
+                        aria-label="View screenshot 6"
+                    >
+                        <img src="../images/projects/tourstify/6.jpeg" alt="" class="media-showcase__thumb-img" loading="lazy" />
+                        <span class="media-showcase__thumb-index">06</span>
+                    </button>
+                            </div>
+            </div>
+        </div>
+    </div>
+</article>
+                                    <article class="featured-case-study featured-case-study--reversed" data-reveal data-card-glow>
+    <div class="featured-case-study__grid">
+        
+        <div class="featured-case-study__info">
+            <div class="featured-case-study__meta-row">
+                <span class="featured-case-study__index">
+                    02
+                </span>
+                <span class="featured-case-study__category">تطبيقات شاملة وتجارة إلكترونية</span>
+                <span class="featured-case-study__dot">·</span>
+                <span class="featured-case-study__year">2024</span>
+                <span class="featured-case-study__dot">·</span>
+                <span class="featured-case-study__status">مكتمل</span>
+            </div>
+
+            <h3 class="featured-case-study__title">
+                <a href="projects/mondoway.html" class="featured-case-study__title-link">
+                    MondoWay
+                    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon icon--directional featured-case-study__title-icon"
+>
+                <path d="M7 17L17 7" /><path d="M7 7h10v10" />
+            </svg>
+                </a>
+            </h3>
+
+            <p class="featured-case-study__description">
+                تطبيق شامل (Super App) ومنصة تجارية متكاملة تجمع بين طلبات المطاعم وتخصيص الوجبات، وتصفح الكتالوجات التجارية، ونظام الألعاب والمكافآت، ودليل الخدمات اللوجستية.
+            </p>
+
+            <div class="featured-case-study__role-badge">
+                <span class="featured-case-study__role-label">الدور:</span>
+                <span class="featured-case-study__role-val">مهندس تطبيقات Flutter</span>
+            </div>
+
+            <div class="featured-case-study__highlights">
+                <ul class="featured-case-study__resp-list">
+                                            <li>
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon featured-case-study__check-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                            <span>تطوير البنية المعمارية لتطبيق Super App يدعم وحدات تجارية متعددة ومستقلة داخل قاعدة كود واحدة.</span>
+                        </li>
+                                            <li>
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon featured-case-study__check-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                            <span>هندسة شاشة تخصيص الوجبات والمنتجات ديناميكياً مع دعم الخيارات المتعددة وحساب الأسعار التفاعلي.</span>
+                        </li>
+                                            <li>
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon featured-case-study__check-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                            <span>بناء نظام سلة التسوق وإنهاء الطلبات مع خيارات الاستلام من الفرع أو التوصيل، ودعم قسائم الخصم وبوابات الدفع.</span>
+                        </li>
+                                    </ul>
+            </div>
+
+            <div class="featured-case-study__tech-wrap">
+                <ul class="featured-case-study__tech-list">
+                                            <li>Flutter</li>
+                                            <li>Dart</li>
+                                            <li>Clean Architecture</li>
+                                            <li>BLoC</li>
+                                            <li>REST APIs</li>
+                                            <li>Payment Gateways</li>
+                                    </ul>
+            </div>
+
+            <div class="featured-case-study__action">
+                <a href="projects/mondoway.html" class="btn btn--primary">
+                    <span>نظرة عامة · Case Study</span>
+                    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon icon--directional"
+>
+                <path d="M5 12h14" /><path d="M13 6l6 6-6 6" />
+            </svg>
+                </a>
+            </div>
+        </div>
+
+        
+        <div class="featured-case-study__media">
+            <div class="media-showcase " data-media-showcase>
+            <div class="media-showcase__stage">
+            
+            <div class="media-showcase__glow" aria-hidden="true"></div>
+
+            
+            <div class="media-showcase__devices">
+                                    <div class="media-showcase__device media-showcase__device--tertiary" aria-hidden="true">
+                        <div class="device-phone ">
+    <div class="device-phone__bezel">
+        <div class="device-phone__screen">
+            <img 
+                src="../images/projects/mondoway/3.jpeg" 
+                alt="MondoWay Screen 3" 
+                class="device-phone__img"
+                loading="lazy"
+                decoding="async"
+            />
+        </div>
+    </div>
+</div>
+                    </div>
+                
+                                    <div class="media-showcase__device media-showcase__device--secondary" aria-hidden="true">
+                        <div class="device-phone ">
+    <div class="device-phone__bezel">
+        <div class="device-phone__screen">
+            <img 
+                src="../images/projects/mondoway/2.jpeg" 
+                alt="MondoWay Screen 2" 
+                class="device-phone__img"
+                loading="lazy"
+                decoding="async"
+            />
+        </div>
+    </div>
+</div>
+                    </div>
+                
+                <div class="media-showcase__device media-showcase__device--primary" data-showcase-primary>
+                    <div class="device-phone ">
+    <div class="device-phone__bezel">
+        <div class="device-phone__screen">
+            <img 
+                src="../images/projects/mondoway/1.jpeg" 
+                alt="MondoWay Main Screen" 
+                class="device-phone__img"
+                loading="eager"
+                decoding="async"
+            />
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+
+        
+                    <div class="media-showcase__gallery-strip" aria-label="Screenshots">
+                                    <button 
+                        type="button" 
+                        class="media-showcase__thumb-btn is-active" 
+                        data-shot-src="../images/projects/mondoway/1.jpeg"
+                        aria-label="View screenshot 1"
+                    >
+                        <img src="../images/projects/mondoway/1.jpeg" alt="" class="media-showcase__thumb-img" loading="lazy" />
+                        <span class="media-showcase__thumb-index">01</span>
+                    </button>
+                                    <button 
+                        type="button" 
+                        class="media-showcase__thumb-btn " 
+                        data-shot-src="../images/projects/mondoway/2.jpeg"
+                        aria-label="View screenshot 2"
+                    >
+                        <img src="../images/projects/mondoway/2.jpeg" alt="" class="media-showcase__thumb-img" loading="lazy" />
+                        <span class="media-showcase__thumb-index">02</span>
+                    </button>
+                                    <button 
+                        type="button" 
+                        class="media-showcase__thumb-btn " 
+                        data-shot-src="../images/projects/mondoway/3.jpeg"
+                        aria-label="View screenshot 3"
+                    >
+                        <img src="../images/projects/mondoway/3.jpeg" alt="" class="media-showcase__thumb-img" loading="lazy" />
+                        <span class="media-showcase__thumb-index">03</span>
+                    </button>
+                                    <button 
+                        type="button" 
+                        class="media-showcase__thumb-btn " 
+                        data-shot-src="../images/projects/mondoway/4.jpeg"
+                        aria-label="View screenshot 4"
+                    >
+                        <img src="../images/projects/mondoway/4.jpeg" alt="" class="media-showcase__thumb-img" loading="lazy" />
+                        <span class="media-showcase__thumb-index">04</span>
+                    </button>
+                                    <button 
+                        type="button" 
+                        class="media-showcase__thumb-btn " 
+                        data-shot-src="../images/projects/mondoway/5.jpeg"
+                        aria-label="View screenshot 5"
+                    >
+                        <img src="../images/projects/mondoway/5.jpeg" alt="" class="media-showcase__thumb-img" loading="lazy" />
+                        <span class="media-showcase__thumb-index">05</span>
+                    </button>
+                                    <button 
+                        type="button" 
+                        class="media-showcase__thumb-btn " 
+                        data-shot-src="../images/projects/mondoway/6.jpeg"
+                        aria-label="View screenshot 6"
+                    >
+                        <img src="../images/projects/mondoway/6.jpeg" alt="" class="media-showcase__thumb-img" loading="lazy" />
+                        <span class="media-showcase__thumb-index">06</span>
+                    </button>
+                                    <button 
+                        type="button" 
+                        class="media-showcase__thumb-btn " 
+                        data-shot-src="../images/projects/mondoway/7.jpeg"
+                        aria-label="View screenshot 7"
+                    >
+                        <img src="../images/projects/mondoway/7.jpeg" alt="" class="media-showcase__thumb-img" loading="lazy" />
+                        <span class="media-showcase__thumb-index">07</span>
+                    </button>
+                                    <button 
+                        type="button" 
+                        class="media-showcase__thumb-btn " 
+                        data-shot-src="../images/projects/mondoway/8.jpeg"
+                        aria-label="View screenshot 8"
+                    >
+                        <img src="../images/projects/mondoway/8.jpeg" alt="" class="media-showcase__thumb-img" loading="lazy" />
+                        <span class="media-showcase__thumb-index">08</span>
+                    </button>
+                            </div>
+            </div>
+        </div>
+    </div>
+</article>
+                            </div>
+            </div>
+</section>
+    <section id="experience" class="section experience">
+    <div class="container">
+        <div class="section-header" data-reveal>
+            <span class="section-header__tag">04 · المسيرة المهنية</span>
+            <h2 class="section-header__title">الخبرات</h2>
+        </div>
+
+        <div class="experience__timeline-wrapper">
+            <div class="experience__line" aria-hidden="true">
+                <div class="experience__line-progress" id="experience-line-progress"></div>
+            </div>
+
+            <ol class="experience__timeline">
+                                    <li class="experience__item" data-reveal>
+                        <div class="experience__node-wrapper" aria-hidden="true">
+                            <div class="experience__node is-current">
+                                                                    <span class="experience__node-pulse"></span>
+                                                            </div>
+                        </div>
+
+                        <div class="experience__card" data-card-glow>
+                            <div class="experience__header">
+                                <div>
+                                    <h3 class="experience__position">مطوّر Flutter</h3>
+                                    <div class="experience__company-row">
+                                        <span class="experience__company">العمل الحر</span>
+                                    </div>
+                                </div>
+                                <div class="experience__period-badge">
+                                    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="12"
+    height="12"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <path d="M12 3l1.9 4.9L19 10l-5.1 2.1L12 17l-1.9-4.9L5 10l5.1-2.1L12 3z" /><path d="M19 17l.9 2.1L22 20l-2.1.9L19 23l-.9-2.1L16 20l2.1-.9L19 17z" />
+            </svg>
+                                    <span>2021 — حتى الآن</span>
+                                </div>
+                            </div>
+
+                            <p class="experience__description">عملت بشكل مستقل على أساس Freelance وPart-Time، وبنيت وحافظت على تطبيقات Flutter جاهزة للإنتاج لعملاء وشركات مختلفة — من ضمنها Mondoway وFramework Technology بالإضافة إلى مشاريع خاصة — مع تولّي القرارات التقنية الأساسية عبر دورة المشروع الكاملة، من فهم المتطلبات والـArchitecture وحتى التطوير والنشر والصيانة.</p>
+
+                            <ul class="experience__responsibilities">
+                                                                    <li>
+                                        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon experience__resp-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                                        <span>بنيت وسلّمت أكثر من 15 تطبيقًا ومشروع Flutter جاهز للإنتاج لعملاء وشركات مختلفة عبر متطلبات منتجات متنوعة.</span>
+                                    </li>
+                                                                    <li>
+                                        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon experience__resp-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                                        <span>أدرت دورة حياة المشروع بشكل كامل، من تحليل المتطلبات والتخطيط التقني وحتى التطوير والنشر والصيانة.</span>
+                                    </li>
+                                                                    <li>
+                                        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon experience__resp-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                                        <span>صممت Architecture قابلة للتوسع لتطبيقات Flutter باستخدام Clean Architecture وBLoC/Cubit لإدارة حالة قابلة للصيانة والاختبار.</span>
+                                    </li>
+                                                                    <li>
+                                        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon experience__resp-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                                        <span>دمجت أكثر من 10 تكاملات REST API وخدمات Firebase وWebSockets والمصادقة وبوابات الدفع ضمن تطبيقات Production.</span>
+                                    </li>
+                                                                    <li>
+                                        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon experience__resp-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                                        <span>تعاملت مباشرة مع العملاء لترجمة متطلبات العمل إلى حلول تقنية عملية وقابلة للتوسع.</span>
+                                    </li>
+                                                                    <li>
+                                        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon experience__resp-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                                        <span>عالجت مشاكل التطبيق وAPI والأداء عبر إصدارات إنتاج متعددة.</span>
+                                    </li>
+                                                            </ul>
+
+                            <ul class="experience__tech">
+                                                                    <li>Flutter</li>
+                                                                    <li>Dart</li>
+                                                                    <li>BLoC</li>
+                                                                    <li>Cubit</li>
+                                                                    <li>Clean Architecture</li>
+                                                                    <li>REST APIs</li>
+                                                                    <li>Firebase</li>
+                                                                    <li>WebSockets</li>
+                                                                    <li>Payment Gateways</li>
+                                                            </ul>
+                        </div>
+                    </li>
+                                    <li class="experience__item" data-reveal>
+                        <div class="experience__node-wrapper" aria-hidden="true">
+                            <div class="experience__node ">
+                                                            </div>
+                        </div>
+
+                        <div class="experience__card" data-card-glow>
+                            <div class="experience__header">
+                                <div>
+                                    <h3 class="experience__position">مطوّر Flutter</h3>
+                                    <div class="experience__company-row">
+                                        <span class="experience__company">Tourstify</span>
+                                    </div>
+                                </div>
+                                <div class="experience__period-badge">
+                                    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="12"
+    height="12"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <path d="M12 3l1.9 4.9L19 10l-5.1 2.1L12 17l-1.9-4.9L5 10l5.1-2.1L12 3z" /><path d="M19 17l.9 2.1L22 20l-2.1.9L19 23l-.9-2.1L16 20l2.1-.9L19 17z" />
+            </svg>
+                                    <span>2024 — 2026</span>
+                                </div>
+                            </div>
+
+                            <p class="experience__description">شاركت في تطوير تطبيقات Flutter وإدارة جوانب تقنية رئيسية من المنتج، مع التركيز على بناء ميزات معقدة، تحسين الأداء، والحفاظ على بنية برمجية قابلة للتوسع والصيانة.</p>
+
+                            <ul class="experience__responsibilities">
+                                                                    <li>
+                                        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon experience__resp-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                                        <span>طورت وحافظت على أكثر من 6 ميزات متقدمة في Flutter، شملت التواصل الفوري والمراسلة الصوتية وتكامل خدمات Firebase ووحدات التطبيق المعقدة.</span>
+                                    </li>
+                                                                    <li>
+                                        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon experience__resp-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                                        <span>دمجت عمليات الدفع وChatbot مدعوم بالذكاء الاصطناعي داخل التطبيق الفعلي في بيئة الإنتاج.</span>
+                                    </li>
+                                                                    <li>
+                                        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon experience__resp-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                                        <span>ساهمت في القرارات المعمارية والتقنية، مع تحسين أداء التطبيق واستقراره.</span>
+                                    </li>
+                                                                    <li>
+                                        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon experience__resp-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                                        <span>حسّنت التعامل مع Firebase وAPI لتعزيز موثوقية تجربة الاستخدام بشكل عام.</span>
+                                    </li>
+                                                            </ul>
+
+                            <ul class="experience__tech">
+                                                                    <li>Flutter</li>
+                                                                    <li>Dart</li>
+                                                                    <li>BLoC</li>
+                                                                    <li>Clean Architecture</li>
+                                                                    <li>Firebase</li>
+                                                                    <li>REST APIs</li>
+                                                                    <li>Payment Integration</li>
+                                                            </ul>
+                        </div>
+                    </li>
+                                    <li class="experience__item" data-reveal>
+                        <div class="experience__node-wrapper" aria-hidden="true">
+                            <div class="experience__node ">
+                                                            </div>
+                        </div>
+
+                        <div class="experience__card" data-card-glow>
+                            <div class="experience__header">
+                                <div>
+                                    <h3 class="experience__position">Junior Web Developer</h3>
+                                    <div class="experience__company-row">
+                                        <span class="experience__company">Prosys Software Solution</span>
+                                    </div>
+                                </div>
+                                <div class="experience__period-badge">
+                                    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="12"
+    height="12"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <path d="M12 3l1.9 4.9L19 10l-5.1 2.1L12 17l-1.9-4.9L5 10l5.1-2.1L12 3z" /><path d="M19 17l.9 2.1L22 20l-2.1.9L19 23l-.9-2.1L16 20l2.1-.9L19 17z" />
+            </svg>
+                                    <span>2023-02 — 2023-04</span>
+                                </div>
+                            </div>
+
+                            <p class="experience__description">عملت ضمن فريق تطوير على أنظمة ويب مبنية باستخدام ASP.NET وقواعد بيانات SQL، وشاركت في تطوير الميزات وتحسين الأنظمة القائمة.</p>
+
+                            <ul class="experience__responsibilities">
+                                                                    <li>
+                                        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon experience__resp-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                                        <span>ساهمت في تطوير وصيانة أنظمة مبنية على ASP.NET والتعامل مع قواعد بيانات SQL ضمن بيئة إنتاج فعلية.</span>
+                                    </li>
+                                                                    <li>
+                                        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon experience__resp-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                                        <span>ساعدت في معالجة المشاكل التقنية وتحسين الأنظمة القائمة بالتعاون مع فريق التطوير.</span>
+                                    </li>
+                                                            </ul>
+
+                            <ul class="experience__tech">
+                                                                    <li>ASP.NET</li>
+                                                                    <li>SQL</li>
+                                                                    <li>Web Development</li>
+                                                            </ul>
+                        </div>
+                    </li>
+                                    <li class="experience__item" data-reveal>
+                        <div class="experience__node-wrapper" aria-hidden="true">
+                            <div class="experience__node ">
+                                                            </div>
+                        </div>
+
+                        <div class="experience__card" data-card-glow>
+                            <div class="experience__header">
+                                <div>
+                                    <h3 class="experience__position">Junior Web Developer</h3>
+                                    <div class="experience__company-row">
+                                        <span class="experience__company">Virtual Data IT</span>
+                                    </div>
+                                </div>
+                                <div class="experience__period-badge">
+                                    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="12"
+    height="12"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <path d="M12 3l1.9 4.9L19 10l-5.1 2.1L12 17l-1.9-4.9L5 10l5.1-2.1L12 3z" /><path d="M19 17l.9 2.1L22 20l-2.1.9L19 23l-.9-2.1L16 20l2.1-.9L19 17z" />
+            </svg>
+                                    <span>2022-08 — 2022-10</span>
+                                </div>
+                            </div>
+
+                            <p class="experience__description">ساهمت في تطوير وصيانة منصات ويب ودعم الأنظمة القائمة، مع التركيز على الواجهات المتجاوبة وتحسين الوظائف وتجربة الاستخدام.</p>
+
+                            <ul class="experience__responsibilities">
+                                                                    <li>
+                                        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon experience__resp-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                                        <span>ساهمت في بناء واجهات ويب متجاوبة وتحسين المكونات والوظائف الحالية.</span>
+                                    </li>
+                                                                    <li>
+                                        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon experience__resp-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                                        <span>دعمت الأنظمة القائمة من خلال معالجة المشاكل وتنفيذ التحسينات المطلوبة.</span>
+                                    </li>
+                                                            </ul>
+
+                            <ul class="experience__tech">
+                                                                    <li>Web Development</li>
+                                                                    <li>Responsive Design</li>
+                                                                    <li>UI Development</li>
+                                                            </ul>
+                        </div>
+                    </li>
+                            </ol>
+        </div>
+    </div>
+</section>
+    <section id="skills" class="section skills">
+    <div class="container">
+        <div class="section-header" data-reveal>
+            <span class="section-header__tag">05 · القدرات</span>
+            <h2 class="section-header__title">المهارات والأدوات</h2>
+        </div>
+
+        <div class="skills__grid">
+                            <div class="skills__card skills__card--mobile" data-reveal data-card-glow>
+                    <div class="skills__card-header">
+                        <div class="skills__icon-box">
+                                                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <rect x="7" y="2" width="10" height="20" rx="2" /><path d="M11 18h2" />
+            </svg>
+                                                    </div>
+                        <h3 class="skills__group-title">تطوير التطبيقات</h3>
+                    </div>
+
+                    <ul class="skills__list">
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Flutter</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Dart</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Responsive UI</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Cross-Platform Mobile Development</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>iOS</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Android</span>
+                            </li>
+                                            </ul>
+                </div>
+                            <div class="skills__card skills__card--architecture" data-reveal data-card-glow>
+                    <div class="skills__card-header">
+                        <div class="skills__icon-box">
+                                                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <path d="M12 3l9 5-9 5-9-5 9-5z" /><path d="M3 13l9 5 9-5" />
+            </svg>
+                                                    </div>
+                        <h3 class="skills__group-title">الهندسة المعمارية وإدارة الحالة</h3>
+                    </div>
+
+                    <ul class="skills__list">
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Clean Architecture</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>BLoC</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Cubit</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>GetX</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Dependency Injection</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>SOLID Principles</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Design Patterns</span>
+                            </li>
+                                            </ul>
+                </div>
+                            <div class="skills__card skills__card--backend" data-reveal data-card-glow>
+                    <div class="skills__card-header">
+                        <div class="skills__icon-box">
+                                                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <path d="M9 2v6" /><path d="M15 2v6" /><path d="M6 8h12v4a6 6 0 0 1-12 0V8z" /><path d="M12 18v4" />
+            </svg>
+                                                    </div>
+                        <h3 class="skills__group-title">الخلفية والتكاملات</h3>
+                    </div>
+
+                    <ul class="skills__list">
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>REST APIs</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>WebSockets</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Firebase Authentication</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Firebase Firestore</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Firebase Cloud Functions</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Firebase Notifications</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Payment Gateways</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Google Maps APIs</span>
+                            </li>
+                                            </ul>
+                </div>
+                            <div class="skills__card skills__card--data" data-reveal data-card-glow>
+                    <div class="skills__card-header">
+                        <div class="skills__icon-box">
+                                                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <polyline points="4 17 10 11 4 5" /><line x1="12" y1="19" x2="20" y2="19" />
+            </svg>
+                                                    </div>
+                        <h3 class="skills__group-title">قواعد البيانات والبيانات</h3>
+                    </div>
+
+                    <ul class="skills__list">
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>SQL</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Relational Databases</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Database / Schema Design</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Firebase Firestore</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Data Modeling Fundamentals</span>
+                            </li>
+                                            </ul>
+                </div>
+                            <div class="skills__card skills__card--engineering" data-reveal data-card-glow>
+                    <div class="skills__card-header">
+                        <div class="skills__icon-box">
+                                                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <polyline points="4 17 10 11 4 5" /><line x1="12" y1="19" x2="20" y2="19" />
+            </svg>
+                                                    </div>
+                        <h3 class="skills__group-title">ممارسات هندسة البرمجيات</h3>
+                    </div>
+
+                    <ul class="skills__list">
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Performance Optimization</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Responsive Design</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Production Deployment</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>API Integration</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Debugging</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Code Maintainability</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Scalable Architecture</span>
+                            </li>
+                                            </ul>
+                </div>
+                            <div class="skills__card skills__card--tools" data-reveal data-card-glow>
+                    <div class="skills__card-header">
+                        <div class="skills__icon-box">
+                                                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <polyline points="4 17 10 11 4 5" /><line x1="12" y1="19" x2="20" y2="19" />
+            </svg>
+                                                    </div>
+                        <h3 class="skills__group-title">الأدوات وبيئة العمل</h3>
+                    </div>
+
+                    <ul class="skills__list">
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Git</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>GitHub</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Postman</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Android Studio</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>VS Code</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Figma</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Agile Methodology</span>
+                            </li>
+                                            </ul>
+                </div>
+                    </div>
+    </div>
+</section>
+    <section id="services" class="section services">
+    <div class="container">
+        <div class="section-header" data-reveal>
+            <span class="section-header__tag">06 · ماذا أقدّم</span>
+            <h2 class="section-header__title">الخدمات</h2>
+        </div>
+
+        <div class="services__grid">
+                            <div class="services__item" data-reveal data-card-glow>
+                    <div class="services__top">
+                        <div class="services__icon-wrapper">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon services__icon"
+>
+                <rect x="7" y="2" width="10" height="20" rx="2" /><path d="M11 18h2" />
+            </svg>
+                        </div>
+                        <span class="services__index meta">01</span>
+                    </div>
+                    <h3 class="services__title">تطوير Flutter</h3>
+                    <p class="services__desc">تطوير تطبيقات Flutter جاهزة للإنتاج، مبنية على بنية قابلة للتوسع وكود منظم مع التركيز على الاعتمادية والاستقرار.</p>
+                </div>
+                            <div class="services__item" data-reveal data-card-glow>
+                    <div class="services__top">
+                        <div class="services__icon-wrapper">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon services__icon"
+>
+                <rect x="4" y="4" width="16" height="16" rx="1" /><path d="M4 9h16" /><path d="M9 4v16" />
+            </svg>
+                        </div>
+                        <span class="services__index meta">02</span>
+                    </div>
+                    <h3 class="services__title">هندسة التطبيقات</h3>
+                    <p class="services__desc">تصميم بنية برمجية قابلة للتوسع والصيانة باستخدام Clean Architecture ومبادئ SOLID وأنماط التصميم المناسبة.</p>
+                </div>
+                            <div class="services__item" data-reveal data-card-glow>
+                    <div class="services__top">
+                        <div class="services__icon-wrapper">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon services__icon"
+>
+                <path d="M9 2v6" /><path d="M15 2v6" /><path d="M6 8h12v4a6 6 0 0 1-12 0V8z" /><path d="M12 18v4" />
+            </svg>
+                        </div>
+                        <span class="services__index meta">03</span>
+                    </div>
+                    <h3 class="services__title">تكامل واجهات البرمجة</h3>
+                    <p class="services__desc">ربط موثوق مع REST APIs وأنظمة المصادقة والخدمات الخلفية والمنصات والخدمات الخارجية.</p>
+                </div>
+                            <div class="services__item" data-reveal data-card-glow>
+                    <div class="services__top">
+                        <div class="services__icon-wrapper">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon services__icon"
+>
+                <circle cx="12" cy="12" r="2" /><path d="M16.24 7.76a6 6 0 0 1 0 8.48" /><path d="M7.76 16.24a6 6 0 0 1 0-8.48" /><path d="M19.07 4.93a10 10 0 0 1 0 14.14" /><path d="M4.93 19.07a10 10 0 0 1 0-14.14" />
+            </svg>
+                        </div>
+                        <span class="services__index meta">04</span>
+                    </div>
+                    <h3 class="services__title">الميزات الفورية</h3>
+                    <p class="services__desc">تطوير وظائف تعمل بشكل فوري باستخدام WebSockets وتحديث البيانات مباشرة والإشعارات ومزامنة حالة التطبيق.</p>
+                </div>
+                            <div class="services__item" data-reveal data-card-glow>
+                    <div class="services__top">
+                        <div class="services__icon-wrapper">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon services__icon"
+>
+                <rect x="2" y="5" width="20" height="14" rx="2" /><path d="M2 10h20" />
+            </svg>
+                        </div>
+                        <span class="services__index meta">05</span>
+                    </div>
+                    <h3 class="services__title">تكامل بوابات الدفع</h3>
+                    <p class="services__desc">دمج عمليات الدفع وبوابات الدفع الإلكتروني داخل تطبيقات Flutter مع التعامل الموثوق مع عمليات المعالجة والمعاملات.</p>
+                </div>
+                            <div class="services__item" data-reveal data-card-glow>
+                    <div class="services__top">
+                        <div class="services__icon-wrapper">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon services__icon"
+>
+                <path d="M12 12l4-3" /><circle cx="12" cy="12" r="9" /><path d="M7 15a6 6 0 0 1 10 0" />
+            </svg>
+                        </div>
+                        <span class="services__index meta">06</span>
+                    </div>
+                    <h3 class="services__title">تحسين الأداء</h3>
+                    <p class="services__desc">تحديد ومعالجة مشاكل الأداء المتعلقة بالرسم واستهلاك الذاكرة والتعامل مع APIs ووقت تشغيل التطبيق.</p>
+                </div>
+                            <div class="services__item" data-reveal data-card-glow>
+                    <div class="services__top">
+                        <div class="services__icon-wrapper">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon services__icon"
+>
+                <path d="M4 4v5h5" /><path d="M20 20v-5h-5" /><path d="M5.5 9A7 7 0 0 1 19 8" /><path d="M18.5 15A7 7 0 0 1 5 16" />
+            </svg>
+                        </div>
+                        <span class="services__index meta">07</span>
+                    </div>
+                    <h3 class="services__title">تطوير التطبيقات القائمة</h3>
+                    <p class="services__desc">إعادة هيكلة وتحديث أكواد Flutter الحالية لتحسين قابلية الصيانة والاستقرار وقابلية التوسع على المدى الطويل.</p>
+                </div>
+                            <div class="services__item" data-reveal data-card-glow>
+                    <div class="services__top">
+                        <div class="services__icon-wrapper">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon services__icon"
+>
+                <path d="M12 2c3 2 5 6 5 10 0 2-1 4-2 5l-1-3-4 0-1 3c-1-1-2-3-2-5 0-4 2-8 5-10z" /><circle cx="12" cy="9" r="1.5" /><path d="M8 16l-2 5 4-2" /><path d="M16 16l2 5-4-2" />
+            </svg>
+                        </div>
+                        <span class="services__index meta">08</span>
+                    </div>
+                    <h3 class="services__title">تجهيز وإطلاق التطبيقات</h3>
+                    <p class="services__desc">تجهيز تطبيقات Flutter للإطلاق على iOS وAndroid، بما يشمل إعدادات الإصدار والاختبار وتجهيز التطبيق للنشر.</p>
+                </div>
+                            <div class="services__item" data-reveal data-card-glow>
+                    <div class="services__top">
+                        <div class="services__icon-wrapper">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon services__icon"
+>
+                <circle cx="12" cy="12" r="9" /><path d="M3 12h18" /><path d="M12 3c2.5 2.5 3.8 5.7 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.7-3.8-9s1.3-6.5 3.8-9z" />
+            </svg>
+                        </div>
+                        <span class="services__index meta">09</span>
+                    </div>
+                    <h3 class="services__title">تطوير الويب</h3>
+                    <p class="services__desc">تطوير مواقع وتطبيقات ويب حديثة ومتجاوبة، مع تنفيذ واجهات أمامية منظمة وربط موثوق مع الخدمات الخلفية وواجهات البرمجة.</p>
+                </div>
+                    </div>
+    </div>
+</section>
+    <section id="contact" class="section contact">
+    <div class="container">
+        <div class="section-header" data-reveal>
+            <span class="section-header__tag">07 · ابقَ على تواصل</span>
+            <h2 class="section-header__title">تواصل</h2>
+        </div>
+
+        <div class="contact__grid">
+            <div class="contact__intro" data-reveal>
+                <p class="contact__lead">هل لديك مشروع Flutter في ذهنك، أو تحتاج مطوّرًا أول ينضم إلى فريقك؟ يسعدني الاستماع إلى تفاصيله.</p>
+
+                <div class="contact__cards">
+                    <!-- Live Availability Banner -->
+                    <div class="contact__availability-bar">
+                        <span class="contact__avail-pulse">
+                            <span class="contact__avail-ping"></span>
+                            <span class="contact__avail-dot"></span>
+                        </span>
+                        <span class="contact__avail-text">متاح لفرص عمل جديدة</span>
+                    </div>
+
+                    <!-- Email Card with Copy Feature -->
+                    <div class="contact__card" data-card-glow>
+                        <div class="contact__card-icon">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <rect x="3" y="5" width="18" height="14" rx="2" /><path d="M3 7l9 6 9-6" />
+            </svg>
+                        </div>
+                        <div class="contact__card-body">
+                            <span class="contact__card-label">البريد الإلكتروني</span>
+                            <div class="contact__email-row">
+                                <a href="mailto:almadmouj@gmail.com" class="contact__email-link">
+                                    almadmouj@gmail.com
+                                </a>
+                                <button type="button" class="contact__copy-btn" data-copy-text="almadmouj@gmail.com" aria-label="نسخ البريد الإلكتروني">
+                                    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon copy-icon"
+>
+                <rect x="9" y="9" width="13" height="13" rx="2" /><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+            </svg>
+                                    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon check-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                                    <span class="contact__copy-tooltip">تم النسخ!</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phone Card -->
+                                            <div class="contact__card" data-card-glow>
+                            <div class="contact__card-icon">
+                                <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <rect x="7" y="2" width="10" height="20" rx="2" /><path d="M11 18h2" />
+            </svg>
+                            </div>
+                            <div class="contact__card-body">
+                                <span class="contact__card-label">الهاتف</span>
+                                <div class="contact__email-row">
+                                    <a href="tel:+962780989992" class="contact__email-link">
+                                        +962 780 989 992
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <!-- Location & Live Timezone Card -->
+                    <div class="contact__card" data-card-glow>
+                        <div class="contact__card-icon contact__card-icon--accent">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z" /><circle cx="12" cy="10" r="2.3" />
+            </svg>
+                        </div>
+                        <div class="contact__card-body">
+                            <div class="contact__timezone-header">
+                                <span class="contact__card-label">الموقع والتوقيت المحلي</span>
+                                <span class="contact__live-clock-badge meta" id="live-jordan-time">17:00 UTC+3</span>
+                            </div>
+                            <span class="contact__card-val">عمّان، الأردن · متاح للعمل عن بُعد حول العالم</span>
+                        </div>
+                    </div>
+
+                    <!-- Social Links Strip -->
+                    <div class="contact__social-strip">
+                                                                            <a href="https://www.linkedin.com/in/anas-al-madmouj-0979271aa/" target="_blank" rel="noopener noreferrer" class="contact__social-btn">
+                                <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <rect x="3" y="3" width="18" height="18" rx="2" /><path d="M7 10v7" /><circle cx="7" cy="7" r="1" /><path d="M11 17v-4a2 2 0 0 1 4 0v4" /><path d="M11 10v7" />
+            </svg>
+                                <span>LinkedIn</span>
+                                <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="12"
+    height="12"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon contact__social-arrow"
+>
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" />
+            </svg>
+                            </a>
+                                            </div>
+                </div>
+            </div>
+
+            <div class="contact__form-container" data-reveal>
+                <form class="contact__form" method="POST" action="https://formspree.io/f/moeagway" novalidate>
+                    <input type="hidden" name="rendered_at" value="1787678125">
+                    <input type="text" name="_gotcha" style="display:none">
+                    <input type="hidden" name="_language" value="ar">
+                    <input type="hidden" name="_next" value="https://anasalmadmouj.github.io/anas-portfolio/ar/index.html#contact">
+
+                    <div class="form-field form-field--honeypot" aria-hidden="true">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company" tabindex="-1" autocomplete="off">
+                    </div>
+
+                    
+                    <div class="form-field">
+                        <label for="name">الاسم</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            value=""
+                            placeholder="اكتب اسمك"
+                            autocomplete="name"
+                            required
+                                                    >
+                                            </div>
+
+                    <div class="form-field">
+                        <label for="email">البريد الإلكتروني</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            value=""
+                            placeholder="you@example.com"
+                            autocomplete="email"
+                            required
+                                                    >
+                                            </div>
+
+                    <div class="form-field">
+                        <label for="message">الرسالة</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="أخبرني عن مشروعك أو متطلباتك أو الجدول الزمني المتوقع..."
+                            required
+                                                    ></textarea>
+                                            </div>
+
+                    <button type="submit" class="btn btn--primary btn--lg contact__submit">
+                        <span>إرسال الرسالة</span>
+                        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon icon--directional"
+>
+                <path d="M5 12h14" /><path d="M13 6l6 6-6 6" />
+            </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <footer class="site-footer">
+    <div class="container site-footer__inner">
+        <div class="site-footer__top">
+            <div class="site-footer__identity">
+                <div class="site-footer__brand">
+                    <span class="navbar__brand-mark" aria-hidden="true">
+                        <span class="navbar__brand-glyph">~/</span>
+                    </span>
+                    <span class="site-footer__name">Anas Almadmouj</span>
+                </div>
+                <p class="site-footer__role meta">Senior Flutter Developer · عمّان، الأردن</p>
+            </div>
+
+            <ul class="site-footer__social">
+                                                    <li>
+                        <a href="https://www.linkedin.com/in/anas-al-madmouj-0979271aa/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <rect x="3" y="3" width="18" height="18" rx="2" /><path d="M7 10v7" /><circle cx="7" cy="7" r="1" /><path d="M11 17v-4a2 2 0 0 1 4 0v4" /><path d="M11 10v7" />
+            </svg>
+                        </a>
+                    </li>
+                                <li>
+                    <a href="mailto:almadmouj@gmail.com" aria-label="البريد الإلكتروني">
+                        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <rect x="3" y="5" width="18" height="14" rx="2" /><path d="M3 7l9 6 9-6" />
+            </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="site-footer__meta">
+            <p class="meta">&copy; 2026 Anas Almadmouj. جميع الحقوق محفوظة.</p>
+            <a href="#home" class="site-footer__back-to-top">
+                العودة إلى الأعلى
+                <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon site-footer__back-icon"
+>
+                <path d="M5 12h14" /><path d="M13 6l6 6-6 6" />
+            </svg>
+            </a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

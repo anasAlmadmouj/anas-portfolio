@@ -1,0 +1,2933 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+    <script>
+        (function () {
+            try {
+                var stored = localStorage.getItem('theme');
+                var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+                document.documentElement.setAttribute('data-theme', theme);
+                document.documentElement.style.colorScheme = theme;
+            } catch (e) {}
+        })();
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Anas Almadmouj is a Senior Flutter Developer and Mobile Application Engineer with 5+ years of experience building production-ready applications with Flutter and Dart, with a focus on Clean Architecture, APIs, integrations, and backend services.">
+    <title>Anas Almadmouj — Senior Flutter Developer</title>
+
+    <link rel="icon" href="../favicon.ico" sizes="any">
+
+    
+            <link rel="canonical" href="https://anasalmadmouj.github.io/anas-portfolio/en/index.html">
+        <link rel="alternate" hreflang="en" href="https://anasalmadmouj.github.io/anas-portfolio/en/index.html">
+        <link rel="alternate" hreflang="ar" href="https://anasalmadmouj.github.io/anas-portfolio/ar/index.html">
+        <link rel="alternate" hreflang="x-default" href="https://anasalmadmouj.github.io/anas-portfolio/en/index.html">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Anas Almadmouj">
+    <meta property="og:locale" content="en_US">
+            <meta property="og:url" content="https://anasalmadmouj.github.io/anas-portfolio/en/index.html">
+        <meta property="og:title" content="Anas Almadmouj — Senior Flutter Developer">
+    <meta property="og:description" content="Anas Almadmouj is a Senior Flutter Developer and Mobile Application Engineer with 5+ years of experience building production-ready applications with Flutter and Dart, with a focus on Clean Architecture, APIs, integrations, and backend services.">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Anas Almadmouj — Senior Flutter Developer">
+    <meta name="twitter:description" content="Anas Almadmouj is a Senior Flutter Developer and Mobile Application Engineer with 5+ years of experience building production-ready applications with Flutter and Dart, with a focus on Clean Architecture, APIs, integrations, and backend services.">
+    
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Anas Almadmouj","jobTitle":"Senior Flutter Developer","url":"https://anasalmadmouj.github.io/anas-portfolio/en/index.html","email":"mailto:almadmouj@gmail.com","address":{"@type":"PostalAddress","addressCountry":"JO"},"sameAs":["https://www.linkedin.com/in/anas-al-madmouj-0979271aa/"]}</script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="preload" as="style" href="../build/assets/app-CBgv0wpJ.css" /><link rel="modulepreload" as="script" href="../build/assets/app-DHFa6xGW.js" /><link rel="stylesheet" href="../build/assets/app-CBgv0wpJ.css" /><script type="module" src="../build/assets/app-DHFa6xGW.js"></script>    </head>
+<body>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <header class="navbar" data-navbar>
+    <div class="container navbar__inner">
+        
+        <a href="#home" class="navbar__brand" aria-label="Anas Almadmouj">
+            <span class="navbar__brand-mark" aria-hidden="true">
+                <span class="navbar__brand-glyph">~/</span>
+            </span>
+            <div class="navbar__brand-text">
+                <span class="navbar__brand-name">Anas Almadmouj</span>
+                <span class="navbar__brand-tag">flutter.dev</span>
+            </div>
+        </a>
+
+        
+        <nav class="navbar__nav" aria-label="Primary navigation">
+            <div class="navbar__dock">
+                <ul class="navbar__links">
+                    <li>
+                        <a 
+                            href="#home" 
+                            class="navbar__link is-active"
+                            aria-current="page"
+                        >
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about" class="navbar__link">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="#projects" 
+                            class="navbar__link "
+                            
+                        >
+                            Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#experience" class="navbar__link">
+                            Experience
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="navbar__link">
+                            Skills
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#services" class="navbar__link">
+                            Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="navbar__link">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                <div class="navbar__indicator" data-nav-indicator aria-hidden="true"></div>
+            </div>
+        </nav>
+
+        
+        <div class="navbar__actions">
+            <div class="navbar__status" title="Available for New Opportunities">
+                <span class="navbar__status-ping" aria-hidden="true"></span>
+                <span class="navbar__status-dot"></span>
+                <span class="navbar__status-text">Available for New Opportunities</span>
+            </div>
+
+            <a
+    href="../ar/index.html"
+    class="lang-switch"
+    aria-label="Switch to Arabic"
+    hreflang="ar"
+>
+    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon lang-switch__icon"
+>
+                <circle cx="12" cy="12" r="9" /><path d="M3 12h18" /><path d="M12 3c2.5 2.5 3.8 5.7 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.7-3.8-9s1.3-6.5 3.8-9z" />
+            </svg>
+    <span class="lang-switch__text">عربي</span>
+</a>
+
+            <button
+    type="button"
+    class="theme-switch"
+    data-theme-toggle
+    aria-label="Toggle theme"
+>
+    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon theme-switch__icon theme-switch__icon--sun"
+>
+                <circle cx="12" cy="12" r="4" /><path d="M12 2v3" /><path d="M12 19v3" /><path d="M4.2 4.2l2.1 2.1" /><path d="M17.7 17.7l2.1 2.1" /><path d="M2 12h3" /><path d="M19 12h3" /><path d="M4.2 19.8l2.1-2.1" /><path d="M17.7 6.3l2.1-2.1" />
+            </svg>
+    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon theme-switch__icon theme-switch__icon--moon"
+>
+                <path d="M20 14.5A8 8 0 1 1 9.5 4 6.5 6.5 0 0 0 20 14.5z" />
+            </svg>
+</button>
+
+            
+            <button
+                type="button"
+                class="navbar__menu-toggle"
+                data-menu-toggle
+                aria-expanded="false"
+                aria-controls="mobile-nav-overlay"
+                aria-label="Open menu"
+            >
+                <span class="navbar__hamburger" aria-hidden="true">
+                    <span class="navbar__hamburger-line"></span>
+                    <span class="navbar__hamburger-line"></span>
+                    <span class="navbar__hamburger-line"></span>
+                </span>
+            </button>
+        </div>
+    </div>
+
+    
+    <div 
+        class="navbar__mobile-overlay" 
+        id="mobile-nav-overlay" 
+        data-mobile-menu 
+        hidden 
+        aria-modal="true" 
+        role="dialog" 
+        aria-label="Primary navigation"
+    >
+        <div class="navbar__mobile-backdrop" data-menu-backdrop></div>
+        
+        <div class="navbar__mobile-dialog">
+            <div class="navbar__mobile-header container">
+                <div class="navbar__mobile-brand">
+                    <span class="navbar__brand-mark">~/</span>
+                    <span class="navbar__brand-name">Anas Almadmouj</span>
+                </div>
+                
+                <button type="button" class="navbar__mobile-close" data-menu-close aria-label="Close menu">
+                    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="22"
+    height="22"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <path d="M6 6l12 12" /><path d="M18 6L6 18" />
+            </svg>
+                </button>
+            </div>
+
+            <div class="navbar__mobile-body container">
+                <nav class="navbar__mobile-nav">
+                    <ul class="navbar__mobile-links">
+                        <li class="navbar__mobile-item" style="--item-index: 1">
+                            <a href="#home" class="navbar__mobile-link is-active">
+                                <span class="navbar__mobile-num">01</span>
+                                <span class="navbar__mobile-label">Home</span>
+                                <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon icon--directional navbar__mobile-arrow"
+>
+                <path d="M5 12h14" /><path d="M13 6l6 6-6 6" />
+            </svg>
+                            </a>
+                        </li>
+                        <li class="navbar__mobile-item" style="--item-index: 2">
+                            <a href="#about" class="navbar__mobile-link">
+                                <span class="navbar__mobile-num">02</span>
+                                <span class="navbar__mobile-label">About</span>
+                                <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon icon--directional navbar__mobile-arrow"
+>
+                <path d="M5 12h14" /><path d="M13 6l6 6-6 6" />
+            </svg>
+                            </a>
+                        </li>
+                        <li class="navbar__mobile-item" style="--item-index: 3">
+                            <a href="#projects" class="navbar__mobile-link ">
+                                <span class="navbar__mobile-num">03</span>
+                                <span class="navbar__mobile-label">Projects</span>
+                                <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon icon--directional navbar__mobile-arrow"
+>
+                <path d="M5 12h14" /><path d="M13 6l6 6-6 6" />
+            </svg>
+                            </a>
+                        </li>
+                        <li class="navbar__mobile-item" style="--item-index: 4">
+                            <a href="#experience" class="navbar__mobile-link">
+                                <span class="navbar__mobile-num">04</span>
+                                <span class="navbar__mobile-label">Experience</span>
+                                <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon icon--directional navbar__mobile-arrow"
+>
+                <path d="M5 12h14" /><path d="M13 6l6 6-6 6" />
+            </svg>
+                            </a>
+                        </li>
+                        <li class="navbar__mobile-item" style="--item-index: 5">
+                            <a href="#skills" class="navbar__mobile-link">
+                                <span class="navbar__mobile-num">05</span>
+                                <span class="navbar__mobile-label">Skills</span>
+                                <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon icon--directional navbar__mobile-arrow"
+>
+                <path d="M5 12h14" /><path d="M13 6l6 6-6 6" />
+            </svg>
+                            </a>
+                        </li>
+                        <li class="navbar__mobile-item" style="--item-index: 6">
+                            <a href="#services" class="navbar__mobile-link">
+                                <span class="navbar__mobile-num">06</span>
+                                <span class="navbar__mobile-label">Services</span>
+                                <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon icon--directional navbar__mobile-arrow"
+>
+                <path d="M5 12h14" /><path d="M13 6l6 6-6 6" />
+            </svg>
+                            </a>
+                        </li>
+                        <li class="navbar__mobile-item" style="--item-index: 7">
+                            <a href="#contact" class="navbar__mobile-link">
+                                <span class="navbar__mobile-num">07</span>
+                                <span class="navbar__mobile-label">Contact</span>
+                                <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon icon--directional navbar__mobile-arrow"
+>
+                <path d="M5 12h14" /><path d="M13 6l6 6-6 6" />
+            </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="navbar__mobile-footer container">
+                <div class="navbar__mobile-status">
+                    <span class="navbar__status-ping" aria-hidden="true"></span>
+                    <span class="navbar__status-dot"></span>
+                    <span>Available for New Opportunities</span>
+                </div>
+
+                <div class="navbar__mobile-actions">
+                    <a
+    href="../ar/index.html"
+    class="lang-switch"
+    aria-label="Switch to Arabic"
+    hreflang="ar"
+>
+    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon lang-switch__icon"
+>
+                <circle cx="12" cy="12" r="9" /><path d="M3 12h18" /><path d="M12 3c2.5 2.5 3.8 5.7 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.7-3.8-9s1.3-6.5 3.8-9z" />
+            </svg>
+    <span class="lang-switch__text">عربي</span>
+</a>
+
+                    <button
+    type="button"
+    class="theme-switch"
+    data-theme-toggle
+    aria-label="Toggle theme"
+>
+    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon theme-switch__icon theme-switch__icon--sun"
+>
+                <circle cx="12" cy="12" r="4" /><path d="M12 2v3" /><path d="M12 19v3" /><path d="M4.2 4.2l2.1 2.1" /><path d="M17.7 17.7l2.1 2.1" /><path d="M2 12h3" /><path d="M19 12h3" /><path d="M4.2 19.8l2.1-2.1" /><path d="M17.7 6.3l2.1-2.1" />
+            </svg>
+    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon theme-switch__icon theme-switch__icon--moon"
+>
+                <path d="M20 14.5A8 8 0 1 1 9.5 4 6.5 6.5 0 0 0 20 14.5z" />
+            </svg>
+</button>
+                </div>
+
+                <a href="#contact" class="btn btn--primary navbar__mobile-cta">
+                    <span>Contact Me</span>
+                    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon icon--directional"
+>
+                <path d="M5 12h14" /><path d="M13 6l6 6-6 6" />
+            </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <main id="main-content">
+            <section id="home" class="section hero">
+    <div class="container hero__grid">
+        <div class="hero__content" data-reveal>
+            <div class="hero__status">
+                <span class="hero__status-pulse">
+                    <span class="hero__status-ping"></span>
+                    <span class="hero__status-dot"></span>
+                </span>
+                <span class="hero__status-text">Senior Flutter Developer · Jordan</span>
+                <span class="hero__status-badge meta">v3.24</span>
+            </div>
+
+            <h1 class="hero__title">Anas Almadmouj</h1>
+            <p class="hero__lead">I build Flutter applications where clean architecture and considered interface design meet — from the first BLoC to the App Store release.</p>
+
+            <div class="hero__actions">
+                <a href="#projects" class="btn btn--primary btn--lg hero__btn-primary">
+                    <span>View Projects</span>
+                    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon icon--directional hero__btn-arrow"
+>
+                <path d="M5 12h14" /><path d="M13 6l6 6-6 6" />
+            </svg>
+                </a>
+                <a href="#contact" class="btn btn--ghost btn--lg">
+                    <span>Contact Me</span>
+                </a>
+                            </div>
+
+            <div class="hero__stats" data-card-glow>
+                <div class="hero__stat">
+                    <span class="hero__stat-num">5+</span>
+                    <span class="hero__stat-label">Years Experience</span>
+                </div>
+                <div class="hero__stat-divider"></div>
+                <div class="hero__stat">
+                    <span class="hero__stat-num">15+</span>
+                    <span class="hero__stat-label">Apps Delivered</span>
+                </div>
+                <div class="hero__stat-divider"></div>
+                <div class="hero__stat">
+                    <span class="hero__stat-num">Production</span>
+                    <span class="hero__stat-label">Ready Applications</span>
+                </div>
+                <div class="hero__stat-divider"></div>
+                <div class="hero__stat">
+                    <span class="hero__stat-num">End-to-End</span>
+                    <span class="hero__stat-label">Development</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero__visual" data-reveal>
+            <div class="hero__console" data-tilt-card data-card-glow>
+                <div class="hero__console-header">
+                    <div class="hero__console-dots" aria-hidden="true">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="hero__console-meta">
+                        <span class="meta-tag"><svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="12"
+    height="12"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <line x1="6" y1="3" x2="6" y2="15" /><circle cx="18" cy="6" r="3" /><circle cx="6" cy="18" r="3" /><path d="M18 9a9 9 0 0 1-9 9" />
+            </svg>
+ main</span>
+                        <span class="meta-tag meta-tag--hash">7f3a9e2</span>
+                    </div>
+                    <div class="hero__console-tabs" role="tablist">
+                        <button type="button" class="hero__console-tab is-active" data-tab-target="tab-arch" role="tab" aria-selected="true">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="13"
+    height="13"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <path d="M12 3l9 5-9 5-9-5 9-5z" /><path d="M3 13l9 5 9-5" />
+            </svg>
+                            <span>Architecture</span>
+                        </button>
+                        <button type="button" class="hero__console-tab" data-tab-target="tab-code" role="tab" aria-selected="false">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="13"
+    height="13"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <polyline points="4 17 10 11 4 5" /><line x1="12" y1="19" x2="20" y2="19" />
+            </svg>
+                            <span>Dart / BLoC</span>
+                        </button>
+                        <button type="button" class="hero__console-tab" data-tab-target="tab-perf" role="tab" aria-selected="false">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="13"
+    height="13"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <path d="M12 12l4-3" /><circle cx="12" cy="12" r="9" /><path d="M7 15a6 6 0 0 1 10 0" />
+            </svg>
+                            <span>Metrics</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hero__console-body">
+                    <!-- Tab 1: Architecture with Animated Data-Flow -->
+                    <div class="hero__tab-content is-active" id="tab-arch" role="tabpanel">
+                        <div class="arch-diagram">
+                            <div class="arch-layer arch-layer--presentation">
+                                <div class="arch-layer__badge">
+                                    <span class="arch-layer__pill">UI & State</span>
+                                    <span class="arch-layer__title">Presentation Layer</span>
+                                </div>
+                                <div class="arch-layer__items">
+                                    <span class="arch-chip">Flutter UI</span>
+                                    <span class="arch-chip">BLoC / Cubit</span>
+                                    <span class="arch-chip">Riverpod</span>
+                                </div>
+                            </div>
+
+                            <div class="arch-connector">
+                                <div class="arch-connector__track">
+                                    <span class="arch-particle arch-particle--down"></span>
+                                    <span class="arch-particle arch-particle--up"></span>
+                                </div>
+                            </div>
+
+                            <div class="arch-layer arch-layer--domain">
+                                <div class="arch-layer__badge">
+                                    <span class="arch-layer__pill">Core Logic</span>
+                                    <span class="arch-layer__title">Domain Layer</span>
+                                </div>
+                                <div class="arch-layer__items">
+                                    <span class="arch-chip">Use Cases</span>
+                                    <span class="arch-chip">Pure Entities</span>
+                                    <span class="arch-chip">Repository Contracts</span>
+                                </div>
+                            </div>
+
+                            <div class="arch-connector">
+                                <div class="arch-connector__track">
+                                    <span class="arch-particle arch-particle--down"></span>
+                                    <span class="arch-particle arch-particle--up"></span>
+                                </div>
+                            </div>
+
+                            <div class="arch-layer arch-layer--data">
+                                <div class="arch-layer__badge">
+                                    <span class="arch-layer__pill">Sources</span>
+                                    <span class="arch-layer__title">Data Layer</span>
+                                </div>
+                                <div class="arch-layer__items">
+                                    <span class="arch-chip">REST APIs / Dio</span>
+                                    <span class="arch-chip">SQLite / Hive</span>
+                                    <span class="arch-chip">Firebase</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab 2: Code Snippet & Interactive State Transition -->
+                    <div class="hero__tab-content" id="tab-code" role="tabpanel" hidden>
+                        <div class="code-interactive-bar">
+                            <span class="code-state-label">Live State Machine:</span>
+                            <div class="code-state-pills">
+                                <button type="button" class="state-pill is-active" data-state="initial">Initial</button>
+                                <button type="button" class="state-pill" data-state="loading">Loading</button>
+                                <button type="button" class="state-pill" data-state="success">Authenticated</button>
+                            </div>
+                            <span class="code-state-output" id="state-output">AuthState.initial()</span>
+                        </div>
+
+                        <pre class="code-preview"><code><span class="code-kw">class</span> <span class="code-class">AuthBloc</span> <span class="code-kw">extends</span> <span class="code-class">Bloc</span>&lt;<span class="code-type">AuthEvent</span>, <span class="code-type">AuthState</span>&gt; {
+  <span class="code-kw">final</span> <span class="code-type">SignInUseCase</span> <span class="code-var">_signIn</span>;
+
+  <span class="code-class">AuthBloc</span>({<span class="code-kw">required</span> <span class="code-type">SignInUseCase</span> signIn})
+      : <span class="code-var">_signIn</span> = signIn,
+        <span class="code-kw">super</span>(<span class="code-kw">const</span> <span class="code-class">AuthState</span>.<span class="code-fn">initial</span>()) {
+    <span class="code-fn">on</span>&lt;<span class="code-class">SignInSubmitted</span>&gt;(_onSignInSubmitted);
+  }
+
+  <span class="code-type">Future</span>&lt;<span class="code-type">void</span>&gt; _onSignInSubmitted(
+    <span class="code-class">SignInSubmitted</span> event,
+    <span class="code-class">Emitter</span>&lt;<span class="code-type">AuthState</span>&gt; emit,
+  ) <span class="code-kw">async</span> {
+    <span class="code-fn">emit</span>(<span class="code-kw">const</span> <span class="code-class">AuthState</span>.<span class="code-fn">loading</span>());
+    <span class="code-kw">final</span> result = <span class="code-kw">await</span> <span class="code-var">_signIn</span>(event.params);
+    result.<span class="code-fn">fold</span>(
+      (failure) =&gt; <span class="code-fn">emit</span>(<span class="code-class">AuthState</span>.<span class="code-fn">error</span>(failure.message)),
+      (user) =&gt; <span class="code-fn">emit</span>(<span class="code-class">AuthState</span>.<span class="code-fn">authenticated</span>(user)),
+    );
+  }
+}<span class="typing-caret"></span></code></pre>
+                    </div>
+
+                    <!-- Tab 3: Performance Metrics -->
+                    <div class="hero__tab-content" id="tab-perf" role="tabpanel" hidden>
+                        <div class="perf-metrics">
+                            <div class="perf-card">
+                                <div class="perf-card__header">
+                                    <span class="perf-card__name">Frame Rate Budget</span>
+                                    <span class="perf-card__value">60.0 FPS</span>
+                                </div>
+                                <div class="perf-bar"><div class="perf-bar__fill" style="width: 100%;"></div></div>
+                                <span class="perf-card__meta">Zero-jank 16.6ms frame execution target</span>
+                            </div>
+
+                            <div class="perf-card">
+                                <div class="perf-card__header">
+                                    <span class="perf-card__name">Unit &amp; BLoC Test Coverage</span>
+                                    <span class="perf-card__value">88.5%</span>
+                                </div>
+                                <div class="perf-bar"><div class="perf-bar__fill perf-bar__fill--cyan" style="width: 88.5%;"></div></div>
+                                <span class="perf-card__meta">Deterministic, reliable business logic testing</span>
+                            </div>
+
+                            <div class="perf-card">
+                                <div class="perf-card__header">
+                                    <span class="perf-card__name">App Cold Startup</span>
+                                    <span class="perf-card__value">&lt; 380 ms</span>
+                                </div>
+                                <div class="perf-bar"><div class="perf-bar__fill perf-bar__fill--emerald" style="width: 95%;"></div></div>
+                                <span class="perf-card__meta">Optimized startup time, with unnecessary singletons removed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero__console-footer">
+                    <div class="console-status">
+                        <span class="console-status__dot"></span>
+                        <span class="console-status__text">Clean Architecture · Verified Build</span>
+                    </div>
+                    <span class="console-version">Latency: 24ms · Flutter 3.24 · Dart 3.5</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="about" class="section about">
+    <div class="container">
+        <div class="section-header" data-reveal>
+            <span class="section-header__tag">02 · About Me</span>
+            <h2 class="section-header__title">Building production-ready mobile products with Flutter.</h2>
+        </div>
+
+        <div class="about__grid">
+            <div class="about__narrative" data-reveal>
+                <p class="about__lead">I&#039;m a Software Engineer and Senior Flutter Developer with 5+ years of professional development experience, focused primarily on building and maintaining production-ready mobile applications. I have worked across 15+ mobile applications and production projects, with hands-on experience in Flutter, Dart, Clean Architecture, BLoC/Cubit, Firebase, REST APIs, WebSockets, Payment Gateways, SQL, Git, and performance optimization. My earlier web development experience with ASP.NET/.NET and SQL also gave me a strong foundation in backend systems, relational databases, and understanding how mobile applications interact with broader software systems. I approach engineering as a continuous process of learning and improvement, and I enjoy solving complex technical problems as much as I enjoy shipping a clean, reliable product.</p>
+                <div class="about__quote">
+                    <div class="about__quote-line"></div>
+                    <p class="about__quote-text">
+                        "Clean code is not an aesthetic indulgence — it is a business strategy for agility and zero-regression velocity."
+                    </p>
+                </div>
+            </div>
+
+            <div class="about__pillars">
+                <div class="about__card" data-reveal>
+                    <div class="about__card-header">
+                        <div class="about__card-icon">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <path d="M12 3l9 5-9 5-9-5 9-5z" /><path d="M3 13l9 5 9-5" />
+            </svg>
+                        </div>
+                        <h3 class="about__card-title">How I Work</h3>
+                    </div>
+                    <p class="about__card-text">My work spans the full application lifecycle — from requirements analysis and architecture to implementation, API integration, testing, deployment, and long-term maintenance. I work comfortably both independently with clients, translating business needs directly into technical solutions, and as part of a team, collaborating closely with backend developers, designers, and product stakeholders.</p>
+                </div>
+
+                <div class="about__card" data-reveal>
+                    <div class="about__card-header">
+                        <div class="about__card-icon about__card-icon--accent">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <rect x="7" y="2" width="10" height="20" rx="2" /><path d="M11 18h2" />
+            </svg>
+                        </div>
+                        <h3 class="about__card-title">What I Focus On</h3>
+                    </div>
+                    <p class="about__card-text">I focus on building applications that are not only functional, but maintainable, scalable, performant, reliable, and ready for real production environments — without losing sight of a smooth, considered user experience.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about__progression" data-reveal>
+            <div class="progression-item">
+                <span class="progression-step">01</span>
+                <div class="progression-content">
+                    <span class="progression-role">Developer</span>
+                    <span class="progression-desc">Strong foundations, hands-on development, and solving real-world technical problems.</span>
+                </div>
+            </div>
+            <div class="progression-arrow" aria-hidden="true">→</div>
+
+            <div class="progression-item">
+                <span class="progression-step">02</span>
+                <div class="progression-content">
+                    <span class="progression-role">Engineer</span>
+                    <span class="progression-desc">Designing reliable systems and scalable application architecture.</span>
+                </div>
+            </div>
+            <div class="progression-arrow" aria-hidden="true">→</div>
+
+            <div class="progression-item">
+                <span class="progression-step">03</span>
+                <div class="progression-content">
+                    <span class="progression-role">Architect</span>
+                    <span class="progression-desc">Making technical decisions that improve maintainability, performance, and scalability.</span>
+                </div>
+            </div>
+            <div class="progression-arrow" aria-hidden="true">→</div>
+
+            <div class="progression-item progression-item--highlight">
+                <span class="progression-step">04</span>
+                <div class="progression-content">
+                    <span class="progression-role">Product Builder</span>
+                    <span class="progression-desc">Turning requirements and ideas into production-ready products from development to deployment.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="about__stack-wrapper" data-reveal>
+            <div class="about__stack-header">
+                <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <rect x="4" y="4" width="16" height="16" rx="2" /><rect x="9" y="9" width="6" height="6" /><line x1="9" y1="1" x2="9" y2="4" /><line x1="15" y1="1" x2="15" y2="4" /><line x1="9" y1="20" x2="9" y2="23" /><line x1="15" y1="20" x2="15" y2="23" /><line x1="20" y1="9" x2="23" y2="9" /><line x1="20" y1="14" x2="23" y2="14" /><line x1="1" y1="9" x2="4" y2="9" /><line x1="1" y1="14" x2="4" y2="14" />
+            </svg>
+                <span class="meta">Core Technologies</span>
+            </div>
+            <ul class="about__stack" aria-label="Core Technologies">
+                                    <li>
+                        <span class="about__stack-dot"></span>
+                        <span>Flutter</span>
+                    </li>
+                                    <li>
+                        <span class="about__stack-dot"></span>
+                        <span>Dart</span>
+                    </li>
+                                    <li>
+                        <span class="about__stack-dot"></span>
+                        <span>BLoC / Cubit</span>
+                    </li>
+                                    <li>
+                        <span class="about__stack-dot"></span>
+                        <span>GetX</span>
+                    </li>
+                                    <li>
+                        <span class="about__stack-dot"></span>
+                        <span>Firebase</span>
+                    </li>
+                                    <li>
+                        <span class="about__stack-dot"></span>
+                        <span>REST APIs</span>
+                    </li>
+                                    <li>
+                        <span class="about__stack-dot"></span>
+                        <span>WebSockets</span>
+                    </li>
+                                    <li>
+                        <span class="about__stack-dot"></span>
+                        <span>Payment Gateways</span>
+                    </li>
+                                    <li>
+                        <span class="about__stack-dot"></span>
+                        <span>SQL</span>
+                    </li>
+                                    <li>
+                        <span class="about__stack-dot"></span>
+                        <span>Clean Architecture</span>
+                    </li>
+                                    <li>
+                        <span class="about__stack-dot"></span>
+                        <span>Git / GitHub</span>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</section>
+    <section id="projects" class="section projects">
+    <div class="container">
+        <div class="projects__header" data-reveal>
+            <div class="section-header">
+                <span class="section-header__tag">03 · Selected Work</span>
+                <h2 class="section-header__title">Projects</h2>
+            </div>
+            <a href="projects.html" class="projects__view-all btn btn--secondary">
+                <span>View all projects</span>
+                <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon icon--directional"
+>
+                <path d="M5 12h14" /><path d="M13 6l6 6-6 6" />
+            </svg>
+            </a>
+        </div>
+
+                    <div class="projects__showcase-list">
+                                    <article class="featured-case-study " data-reveal data-card-glow>
+    <div class="featured-case-study__grid">
+        
+        <div class="featured-case-study__info">
+            <div class="featured-case-study__meta-row">
+                <span class="featured-case-study__index">
+                    01
+                </span>
+                <span class="featured-case-study__category">Travel &amp; Social</span>
+                <span class="featured-case-study__dot">·</span>
+                <span class="featured-case-study__year">2024</span>
+                <span class="featured-case-study__dot">·</span>
+                <span class="featured-case-study__status">Completed</span>
+            </div>
+
+            <h3 class="featured-case-study__title">
+                <a href="projects/tourstify.html" class="featured-case-study__title-link">
+                    Tourstify
+                    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon icon--directional featured-case-study__title-icon"
+>
+                <path d="M7 17L17 7" /><path d="M7 7h10v10" />
+            </svg>
+                </a>
+            </h3>
+
+            <p class="featured-case-study__description">
+                A dynamic social travel companion platform featuring real-time traveler matchmaking, interactive trip planners, and voice messaging with audio waveform transcription.
+            </p>
+
+            <div class="featured-case-study__role-badge">
+                <span class="featured-case-study__role-label">Role:</span>
+                <span class="featured-case-study__role-val">Lead Flutter Mobile Developer</span>
+            </div>
+
+            <div class="featured-case-study__highlights">
+                <ul class="featured-case-study__resp-list">
+                                            <li>
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon featured-case-study__check-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                            <span>Architected the entire Flutter mobile application using BLoC state management and Clean Architecture principles.</span>
+                        </li>
+                                            <li>
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon featured-case-study__check-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                            <span>Implemented real-time voice messaging engine with interactive audio waveform visualization and audio player controls.</span>
+                        </li>
+                                            <li>
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon featured-case-study__check-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                            <span>Engineered the traveler discovery &amp; matching algorithms with dynamic filters and connection request workflows.</span>
+                        </li>
+                                    </ul>
+            </div>
+
+            <div class="featured-case-study__tech-wrap">
+                <ul class="featured-case-study__tech-list">
+                                            <li>Flutter</li>
+                                            <li>Dart</li>
+                                            <li>BLoC</li>
+                                            <li>Audio Waveforms</li>
+                                            <li>REST APIs</li>
+                                            <li>Firebase</li>
+                                            <li>Payment Gateways</li>
+                                            <li>AI Chatbot</li>
+                                    </ul>
+            </div>
+
+            <div class="featured-case-study__action">
+                <a href="projects/tourstify.html" class="btn btn--primary">
+                    <span>Overview · Case Study</span>
+                    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon icon--directional"
+>
+                <path d="M5 12h14" /><path d="M13 6l6 6-6 6" />
+            </svg>
+                </a>
+            </div>
+        </div>
+
+        
+        <div class="featured-case-study__media">
+            <div class="media-showcase " data-media-showcase>
+            <div class="media-showcase__stage">
+            
+            <div class="media-showcase__glow" aria-hidden="true"></div>
+
+            
+            <div class="media-showcase__devices">
+                                    <div class="media-showcase__device media-showcase__device--tertiary" aria-hidden="true">
+                        <div class="device-phone ">
+    <div class="device-phone__bezel">
+        <div class="device-phone__screen">
+            <img 
+                src="../images/projects/tourstify/3.jpeg" 
+                alt="Tourstify Screen 3" 
+                class="device-phone__img"
+                loading="lazy"
+                decoding="async"
+            />
+        </div>
+    </div>
+</div>
+                    </div>
+                
+                                    <div class="media-showcase__device media-showcase__device--secondary" aria-hidden="true">
+                        <div class="device-phone ">
+    <div class="device-phone__bezel">
+        <div class="device-phone__screen">
+            <img 
+                src="../images/projects/tourstify/2.jpeg" 
+                alt="Tourstify Screen 2" 
+                class="device-phone__img"
+                loading="lazy"
+                decoding="async"
+            />
+        </div>
+    </div>
+</div>
+                    </div>
+                
+                <div class="media-showcase__device media-showcase__device--primary" data-showcase-primary>
+                    <div class="device-phone ">
+    <div class="device-phone__bezel">
+        <div class="device-phone__screen">
+            <img 
+                src="../images/projects/tourstify/1.jpeg" 
+                alt="Tourstify Main Screen" 
+                class="device-phone__img"
+                loading="eager"
+                decoding="async"
+            />
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+
+        
+                    <div class="media-showcase__gallery-strip" aria-label="Screenshots">
+                                    <button 
+                        type="button" 
+                        class="media-showcase__thumb-btn is-active" 
+                        data-shot-src="../images/projects/tourstify/1.jpeg"
+                        aria-label="View screenshot 1"
+                    >
+                        <img src="../images/projects/tourstify/1.jpeg" alt="" class="media-showcase__thumb-img" loading="lazy" />
+                        <span class="media-showcase__thumb-index">01</span>
+                    </button>
+                                    <button 
+                        type="button" 
+                        class="media-showcase__thumb-btn " 
+                        data-shot-src="../images/projects/tourstify/2.jpeg"
+                        aria-label="View screenshot 2"
+                    >
+                        <img src="../images/projects/tourstify/2.jpeg" alt="" class="media-showcase__thumb-img" loading="lazy" />
+                        <span class="media-showcase__thumb-index">02</span>
+                    </button>
+                                    <button 
+                        type="button" 
+                        class="media-showcase__thumb-btn " 
+                        data-shot-src="../images/projects/tourstify/3.jpeg"
+                        aria-label="View screenshot 3"
+                    >
+                        <img src="../images/projects/tourstify/3.jpeg" alt="" class="media-showcase__thumb-img" loading="lazy" />
+                        <span class="media-showcase__thumb-index">03</span>
+                    </button>
+                                    <button 
+                        type="button" 
+                        class="media-showcase__thumb-btn " 
+                        data-shot-src="../images/projects/tourstify/4.jpeg"
+                        aria-label="View screenshot 4"
+                    >
+                        <img src="../images/projects/tourstify/4.jpeg" alt="" class="media-showcase__thumb-img" loading="lazy" />
+                        <span class="media-showcase__thumb-index">04</span>
+                    </button>
+                                    <button 
+                        type="button" 
+                        class="media-showcase__thumb-btn " 
+                        data-shot-src="../images/projects/tourstify/5.jpeg"
+                        aria-label="View screenshot 5"
+                    >
+                        <img src="../images/projects/tourstify/5.jpeg" alt="" class="media-showcase__thumb-img" loading="lazy" />
+                        <span class="media-showcase__thumb-index">05</span>
+                    </button>
+                                    <button 
+                        type="button" 
+                        class="media-showcase__thumb-btn " 
+                        data-shot-src="../images/projects/tourstify/6.jpeg"
+                        aria-label="View screenshot 6"
+                    >
+                        <img src="../images/projects/tourstify/6.jpeg" alt="" class="media-showcase__thumb-img" loading="lazy" />
+                        <span class="media-showcase__thumb-index">06</span>
+                    </button>
+                            </div>
+            </div>
+        </div>
+    </div>
+</article>
+                                    <article class="featured-case-study featured-case-study--reversed" data-reveal data-card-glow>
+    <div class="featured-case-study__grid">
+        
+        <div class="featured-case-study__info">
+            <div class="featured-case-study__meta-row">
+                <span class="featured-case-study__index">
+                    02
+                </span>
+                <span class="featured-case-study__category">Super App &amp; Marketplace</span>
+                <span class="featured-case-study__dot">·</span>
+                <span class="featured-case-study__year">2024</span>
+                <span class="featured-case-study__dot">·</span>
+                <span class="featured-case-study__status">Completed</span>
+            </div>
+
+            <h3 class="featured-case-study__title">
+                <a href="projects/mondoway.html" class="featured-case-study__title-link">
+                    MondoWay
+                    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon icon--directional featured-case-study__title-icon"
+>
+                <path d="M7 17L17 7" /><path d="M7 7h10v10" />
+            </svg>
+                </a>
+            </h3>
+
+            <p class="featured-case-study__description">
+                A multi-vendor super app and commercial marketplace integrating restaurant food ordering, multi-category retail catalogs, interactive gamification rewards, and corporate logistics directories.
+            </p>
+
+            <div class="featured-case-study__role-badge">
+                <span class="featured-case-study__role-label">Role:</span>
+                <span class="featured-case-study__role-val">Flutter Mobile Engineer</span>
+            </div>
+
+            <div class="featured-case-study__highlights">
+                <ul class="featured-case-study__resp-list">
+                                            <li>
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon featured-case-study__check-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                            <span>Developed end-to-end mobile super app architecture supporting multiple distinct commercial modules within a single codebase.</span>
+                        </li>
+                                            <li>
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon featured-case-study__check-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                            <span>Engineered real-time menu item customizer with dynamic option trees, portion sizing, and reactive subtotal calculations.</span>
+                        </li>
+                                            <li>
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon featured-case-study__check-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                            <span>Built multi-vendor checkout and cart management with pickup and doorstep delivery options, coupon engine, and payment gateways.</span>
+                        </li>
+                                    </ul>
+            </div>
+
+            <div class="featured-case-study__tech-wrap">
+                <ul class="featured-case-study__tech-list">
+                                            <li>Flutter</li>
+                                            <li>Dart</li>
+                                            <li>Clean Architecture</li>
+                                            <li>BLoC</li>
+                                            <li>REST APIs</li>
+                                            <li>Payment Gateways</li>
+                                    </ul>
+            </div>
+
+            <div class="featured-case-study__action">
+                <a href="projects/mondoway.html" class="btn btn--primary">
+                    <span>Overview · Case Study</span>
+                    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon icon--directional"
+>
+                <path d="M5 12h14" /><path d="M13 6l6 6-6 6" />
+            </svg>
+                </a>
+            </div>
+        </div>
+
+        
+        <div class="featured-case-study__media">
+            <div class="media-showcase " data-media-showcase>
+            <div class="media-showcase__stage">
+            
+            <div class="media-showcase__glow" aria-hidden="true"></div>
+
+            
+            <div class="media-showcase__devices">
+                                    <div class="media-showcase__device media-showcase__device--tertiary" aria-hidden="true">
+                        <div class="device-phone ">
+    <div class="device-phone__bezel">
+        <div class="device-phone__screen">
+            <img 
+                src="../images/projects/mondoway/3.jpeg" 
+                alt="MondoWay Screen 3" 
+                class="device-phone__img"
+                loading="lazy"
+                decoding="async"
+            />
+        </div>
+    </div>
+</div>
+                    </div>
+                
+                                    <div class="media-showcase__device media-showcase__device--secondary" aria-hidden="true">
+                        <div class="device-phone ">
+    <div class="device-phone__bezel">
+        <div class="device-phone__screen">
+            <img 
+                src="../images/projects/mondoway/2.jpeg" 
+                alt="MondoWay Screen 2" 
+                class="device-phone__img"
+                loading="lazy"
+                decoding="async"
+            />
+        </div>
+    </div>
+</div>
+                    </div>
+                
+                <div class="media-showcase__device media-showcase__device--primary" data-showcase-primary>
+                    <div class="device-phone ">
+    <div class="device-phone__bezel">
+        <div class="device-phone__screen">
+            <img 
+                src="../images/projects/mondoway/1.jpeg" 
+                alt="MondoWay Main Screen" 
+                class="device-phone__img"
+                loading="eager"
+                decoding="async"
+            />
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+
+        
+                    <div class="media-showcase__gallery-strip" aria-label="Screenshots">
+                                    <button 
+                        type="button" 
+                        class="media-showcase__thumb-btn is-active" 
+                        data-shot-src="../images/projects/mondoway/1.jpeg"
+                        aria-label="View screenshot 1"
+                    >
+                        <img src="../images/projects/mondoway/1.jpeg" alt="" class="media-showcase__thumb-img" loading="lazy" />
+                        <span class="media-showcase__thumb-index">01</span>
+                    </button>
+                                    <button 
+                        type="button" 
+                        class="media-showcase__thumb-btn " 
+                        data-shot-src="../images/projects/mondoway/2.jpeg"
+                        aria-label="View screenshot 2"
+                    >
+                        <img src="../images/projects/mondoway/2.jpeg" alt="" class="media-showcase__thumb-img" loading="lazy" />
+                        <span class="media-showcase__thumb-index">02</span>
+                    </button>
+                                    <button 
+                        type="button" 
+                        class="media-showcase__thumb-btn " 
+                        data-shot-src="../images/projects/mondoway/3.jpeg"
+                        aria-label="View screenshot 3"
+                    >
+                        <img src="../images/projects/mondoway/3.jpeg" alt="" class="media-showcase__thumb-img" loading="lazy" />
+                        <span class="media-showcase__thumb-index">03</span>
+                    </button>
+                                    <button 
+                        type="button" 
+                        class="media-showcase__thumb-btn " 
+                        data-shot-src="../images/projects/mondoway/4.jpeg"
+                        aria-label="View screenshot 4"
+                    >
+                        <img src="../images/projects/mondoway/4.jpeg" alt="" class="media-showcase__thumb-img" loading="lazy" />
+                        <span class="media-showcase__thumb-index">04</span>
+                    </button>
+                                    <button 
+                        type="button" 
+                        class="media-showcase__thumb-btn " 
+                        data-shot-src="../images/projects/mondoway/5.jpeg"
+                        aria-label="View screenshot 5"
+                    >
+                        <img src="../images/projects/mondoway/5.jpeg" alt="" class="media-showcase__thumb-img" loading="lazy" />
+                        <span class="media-showcase__thumb-index">05</span>
+                    </button>
+                                    <button 
+                        type="button" 
+                        class="media-showcase__thumb-btn " 
+                        data-shot-src="../images/projects/mondoway/6.jpeg"
+                        aria-label="View screenshot 6"
+                    >
+                        <img src="../images/projects/mondoway/6.jpeg" alt="" class="media-showcase__thumb-img" loading="lazy" />
+                        <span class="media-showcase__thumb-index">06</span>
+                    </button>
+                                    <button 
+                        type="button" 
+                        class="media-showcase__thumb-btn " 
+                        data-shot-src="../images/projects/mondoway/7.jpeg"
+                        aria-label="View screenshot 7"
+                    >
+                        <img src="../images/projects/mondoway/7.jpeg" alt="" class="media-showcase__thumb-img" loading="lazy" />
+                        <span class="media-showcase__thumb-index">07</span>
+                    </button>
+                                    <button 
+                        type="button" 
+                        class="media-showcase__thumb-btn " 
+                        data-shot-src="../images/projects/mondoway/8.jpeg"
+                        aria-label="View screenshot 8"
+                    >
+                        <img src="../images/projects/mondoway/8.jpeg" alt="" class="media-showcase__thumb-img" loading="lazy" />
+                        <span class="media-showcase__thumb-index">08</span>
+                    </button>
+                            </div>
+            </div>
+        </div>
+    </div>
+</article>
+                            </div>
+            </div>
+</section>
+    <section id="experience" class="section experience">
+    <div class="container">
+        <div class="section-header" data-reveal>
+            <span class="section-header__tag">04 · Career</span>
+            <h2 class="section-header__title">Experience</h2>
+        </div>
+
+        <div class="experience__timeline-wrapper">
+            <div class="experience__line" aria-hidden="true">
+                <div class="experience__line-progress" id="experience-line-progress"></div>
+            </div>
+
+            <ol class="experience__timeline">
+                                    <li class="experience__item" data-reveal>
+                        <div class="experience__node-wrapper" aria-hidden="true">
+                            <div class="experience__node is-current">
+                                                                    <span class="experience__node-pulse"></span>
+                                                            </div>
+                        </div>
+
+                        <div class="experience__card" data-card-glow>
+                            <div class="experience__header">
+                                <div>
+                                    <h3 class="experience__position">Flutter Developer</h3>
+                                    <div class="experience__company-row">
+                                        <span class="experience__company">Freelance</span>
+                                    </div>
+                                </div>
+                                <div class="experience__period-badge">
+                                    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="12"
+    height="12"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <path d="M12 3l1.9 4.9L19 10l-5.1 2.1L12 17l-1.9-4.9L5 10l5.1-2.1L12 3z" /><path d="M19 17l.9 2.1L22 20l-2.1.9L19 23l-.9-2.1L16 20l2.1-.9L19 17z" />
+            </svg>
+                                    <span>2021 — Present</span>
+                                </div>
+                            </div>
+
+                            <p class="experience__description">Worked independently on a freelance and part-time basis, building and maintaining production-ready Flutter applications for clients and businesses — including Mondoway, Framework Technology, and private projects — while owning key technical decisions across the full project lifecycle, from requirements and architecture to development, deployment, and maintenance.</p>
+
+                            <ul class="experience__responsibilities">
+                                                                    <li>
+                                        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon experience__resp-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                                        <span>Built and delivered 15+ production-ready Flutter applications and projects for multiple clients and businesses across different product requirements.</span>
+                                    </li>
+                                                                    <li>
+                                        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon experience__resp-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                                        <span>Managed complete project lifecycles from requirements analysis and technical planning through development, deployment, and maintenance.</span>
+                                    </li>
+                                                                    <li>
+                                        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon experience__resp-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                                        <span>Architected scalable Flutter applications using Clean Architecture and BLoC/Cubit for maintainable, testable state management.</span>
+                                    </li>
+                                                                    <li>
+                                        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon experience__resp-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                                        <span>Integrated 10+ REST APIs, Firebase services, WebSockets, authentication, and payment gateways across production applications.</span>
+                                    </li>
+                                                                    <li>
+                                        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon experience__resp-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                                        <span>Worked directly with clients to translate business requirements into practical, scalable technical solutions.</span>
+                                    </li>
+                                                                    <li>
+                                        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon experience__resp-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                                        <span>Debugged and resolved application, API, and performance issues across multiple production releases.</span>
+                                    </li>
+                                                            </ul>
+
+                            <ul class="experience__tech">
+                                                                    <li>Flutter</li>
+                                                                    <li>Dart</li>
+                                                                    <li>BLoC</li>
+                                                                    <li>Cubit</li>
+                                                                    <li>Clean Architecture</li>
+                                                                    <li>REST APIs</li>
+                                                                    <li>Firebase</li>
+                                                                    <li>WebSockets</li>
+                                                                    <li>Payment Gateways</li>
+                                                            </ul>
+                        </div>
+                    </li>
+                                    <li class="experience__item" data-reveal>
+                        <div class="experience__node-wrapper" aria-hidden="true">
+                            <div class="experience__node ">
+                                                            </div>
+                        </div>
+
+                        <div class="experience__card" data-card-glow>
+                            <div class="experience__header">
+                                <div>
+                                    <h3 class="experience__position">Flutter Developer</h3>
+                                    <div class="experience__company-row">
+                                        <span class="experience__company">Tourstify</span>
+                                    </div>
+                                </div>
+                                <div class="experience__period-badge">
+                                    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="12"
+    height="12"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <path d="M12 3l1.9 4.9L19 10l-5.1 2.1L12 17l-1.9-4.9L5 10l5.1-2.1L12 3z" /><path d="M19 17l.9 2.1L22 20l-2.1.9L19 23l-.9-2.1L16 20l2.1-.9L19 17z" />
+            </svg>
+                                    <span>2024 — 2026</span>
+                                </div>
+                            </div>
+
+                            <p class="experience__description">Contributed to the development of Flutter applications and owned key technical areas of the product, with a focus on complex feature development, performance, and maintaining a scalable and maintainable codebase.</p>
+
+                            <ul class="experience__responsibilities">
+                                                                    <li>
+                                        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon experience__resp-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                                        <span>Developed and maintained 6+ advanced Flutter features, including real-time communication, voice messaging, Firebase integrations, and complex application modules.</span>
+                                    </li>
+                                                                    <li>
+                                        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon experience__resp-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                                        <span>Integrated payment workflows and an AI-powered chatbot into the production application.</span>
+                                    </li>
+                                                                    <li>
+                                        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon experience__resp-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                                        <span>Contributed to architectural and technical decisions, optimizing performance and application stability across the product.</span>
+                                    </li>
+                                                                    <li>
+                                        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon experience__resp-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                                        <span>Improved API handling and Firebase integrations to strengthen the overall reliability of the user experience.</span>
+                                    </li>
+                                                            </ul>
+
+                            <ul class="experience__tech">
+                                                                    <li>Flutter</li>
+                                                                    <li>Dart</li>
+                                                                    <li>BLoC</li>
+                                                                    <li>Clean Architecture</li>
+                                                                    <li>Firebase</li>
+                                                                    <li>REST APIs</li>
+                                                                    <li>Payment Integration</li>
+                                                            </ul>
+                        </div>
+                    </li>
+                                    <li class="experience__item" data-reveal>
+                        <div class="experience__node-wrapper" aria-hidden="true">
+                            <div class="experience__node ">
+                                                            </div>
+                        </div>
+
+                        <div class="experience__card" data-card-glow>
+                            <div class="experience__header">
+                                <div>
+                                    <h3 class="experience__position">Junior Web Developer</h3>
+                                    <div class="experience__company-row">
+                                        <span class="experience__company">Prosys Software Solution</span>
+                                    </div>
+                                </div>
+                                <div class="experience__period-badge">
+                                    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="12"
+    height="12"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <path d="M12 3l1.9 4.9L19 10l-5.1 2.1L12 17l-1.9-4.9L5 10l5.1-2.1L12 3z" /><path d="M19 17l.9 2.1L22 20l-2.1.9L19 23l-.9-2.1L16 20l2.1-.9L19 17z" />
+            </svg>
+                                    <span>2023-02 — 2023-04</span>
+                                </div>
+                            </div>
+
+                            <p class="experience__description">Worked as part of a development team on ASP.NET-based web systems and SQL databases, contributing to feature development and improvements to existing systems.</p>
+
+                            <ul class="experience__responsibilities">
+                                                                    <li>
+                                        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon experience__resp-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                                        <span>Contributed to developing and maintaining ASP.NET-based systems and SQL databases within a production environment.</span>
+                                    </li>
+                                                                    <li>
+                                        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon experience__resp-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                                        <span>Supported debugging and improvements to existing functionality alongside the development team.</span>
+                                    </li>
+                                                            </ul>
+
+                            <ul class="experience__tech">
+                                                                    <li>ASP.NET</li>
+                                                                    <li>SQL</li>
+                                                                    <li>Web Development</li>
+                                                            </ul>
+                        </div>
+                    </li>
+                                    <li class="experience__item" data-reveal>
+                        <div class="experience__node-wrapper" aria-hidden="true">
+                            <div class="experience__node ">
+                                                            </div>
+                        </div>
+
+                        <div class="experience__card" data-card-glow>
+                            <div class="experience__header">
+                                <div>
+                                    <h3 class="experience__position">Junior Web Developer</h3>
+                                    <div class="experience__company-row">
+                                        <span class="experience__company">Virtual Data IT</span>
+                                    </div>
+                                </div>
+                                <div class="experience__period-badge">
+                                    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="12"
+    height="12"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <path d="M12 3l1.9 4.9L19 10l-5.1 2.1L12 17l-1.9-4.9L5 10l5.1-2.1L12 3z" /><path d="M19 17l.9 2.1L22 20l-2.1.9L19 23l-.9-2.1L16 20l2.1-.9L19 17z" />
+            </svg>
+                                    <span>2022-08 — 2022-10</span>
+                                </div>
+                            </div>
+
+                            <p class="experience__description">Contributed to the development and maintenance of web platforms and existing production systems, with a focus on responsive interfaces, functionality, and user-facing improvements.</p>
+
+                            <ul class="experience__responsibilities">
+                                                                    <li>
+                                        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon experience__resp-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                                        <span>Contributed to building responsive web interfaces and improving existing components and functionality.</span>
+                                    </li>
+                                                                    <li>
+                                        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon experience__resp-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                                        <span>Supported existing systems by troubleshooting issues and implementing requested improvements.</span>
+                                    </li>
+                                                            </ul>
+
+                            <ul class="experience__tech">
+                                                                    <li>Web Development</li>
+                                                                    <li>Responsive Design</li>
+                                                                    <li>UI Development</li>
+                                                            </ul>
+                        </div>
+                    </li>
+                            </ol>
+        </div>
+    </div>
+</section>
+    <section id="skills" class="section skills">
+    <div class="container">
+        <div class="section-header" data-reveal>
+            <span class="section-header__tag">05 · Capabilities</span>
+            <h2 class="section-header__title">Skills &amp; Tools</h2>
+        </div>
+
+        <div class="skills__grid">
+                            <div class="skills__card skills__card--mobile" data-reveal data-card-glow>
+                    <div class="skills__card-header">
+                        <div class="skills__icon-box">
+                                                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <rect x="7" y="2" width="10" height="20" rx="2" /><path d="M11 18h2" />
+            </svg>
+                                                    </div>
+                        <h3 class="skills__group-title">Mobile Development</h3>
+                    </div>
+
+                    <ul class="skills__list">
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Flutter</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Dart</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Responsive UI</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Cross-Platform Mobile Development</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>iOS</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Android</span>
+                            </li>
+                                            </ul>
+                </div>
+                            <div class="skills__card skills__card--architecture" data-reveal data-card-glow>
+                    <div class="skills__card-header">
+                        <div class="skills__icon-box">
+                                                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <path d="M12 3l9 5-9 5-9-5 9-5z" /><path d="M3 13l9 5 9-5" />
+            </svg>
+                                                    </div>
+                        <h3 class="skills__group-title">Architecture &amp; State Management</h3>
+                    </div>
+
+                    <ul class="skills__list">
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Clean Architecture</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>BLoC</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Cubit</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>GetX</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Dependency Injection</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>SOLID Principles</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Design Patterns</span>
+                            </li>
+                                            </ul>
+                </div>
+                            <div class="skills__card skills__card--backend" data-reveal data-card-glow>
+                    <div class="skills__card-header">
+                        <div class="skills__icon-box">
+                                                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <path d="M9 2v6" /><path d="M15 2v6" /><path d="M6 8h12v4a6 6 0 0 1-12 0V8z" /><path d="M12 18v4" />
+            </svg>
+                                                    </div>
+                        <h3 class="skills__group-title">Backend &amp; Integrations</h3>
+                    </div>
+
+                    <ul class="skills__list">
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>REST APIs</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>WebSockets</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Firebase Authentication</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Firebase Firestore</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Firebase Cloud Functions</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Firebase Notifications</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Payment Gateways</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Google Maps APIs</span>
+                            </li>
+                                            </ul>
+                </div>
+                            <div class="skills__card skills__card--data" data-reveal data-card-glow>
+                    <div class="skills__card-header">
+                        <div class="skills__icon-box">
+                                                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <polyline points="4 17 10 11 4 5" /><line x1="12" y1="19" x2="20" y2="19" />
+            </svg>
+                                                    </div>
+                        <h3 class="skills__group-title">Databases &amp; Data</h3>
+                    </div>
+
+                    <ul class="skills__list">
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>SQL</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Relational Databases</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Database / Schema Design</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Firebase Firestore</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Data Modeling Fundamentals</span>
+                            </li>
+                                            </ul>
+                </div>
+                            <div class="skills__card skills__card--engineering" data-reveal data-card-glow>
+                    <div class="skills__card-header">
+                        <div class="skills__icon-box">
+                                                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <polyline points="4 17 10 11 4 5" /><line x1="12" y1="19" x2="20" y2="19" />
+            </svg>
+                                                    </div>
+                        <h3 class="skills__group-title">Software Engineering Practices</h3>
+                    </div>
+
+                    <ul class="skills__list">
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Performance Optimization</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Responsive Design</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Production Deployment</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>API Integration</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Debugging</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Code Maintainability</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Scalable Architecture</span>
+                            </li>
+                                            </ul>
+                </div>
+                            <div class="skills__card skills__card--tools" data-reveal data-card-glow>
+                    <div class="skills__card-header">
+                        <div class="skills__icon-box">
+                                                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <polyline points="4 17 10 11 4 5" /><line x1="12" y1="19" x2="20" y2="19" />
+            </svg>
+                                                    </div>
+                        <h3 class="skills__group-title">Tools &amp; Workflow</h3>
+                    </div>
+
+                    <ul class="skills__list">
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Git</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>GitHub</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Postman</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Android Studio</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>VS Code</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Figma</span>
+                            </li>
+                                                    <li class="skills__pill">
+                                <span class="skills__pill-dot"></span>
+                                <span>Agile Methodology</span>
+                            </li>
+                                            </ul>
+                </div>
+                    </div>
+    </div>
+</section>
+    <section id="services" class="section services">
+    <div class="container">
+        <div class="section-header" data-reveal>
+            <span class="section-header__tag">06 · What I Do</span>
+            <h2 class="section-header__title">Services</h2>
+        </div>
+
+        <div class="services__grid">
+                            <div class="services__item" data-reveal data-card-glow>
+                    <div class="services__top">
+                        <div class="services__icon-wrapper">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon services__icon"
+>
+                <rect x="7" y="2" width="10" height="20" rx="2" /><path d="M11 18h2" />
+            </svg>
+                        </div>
+                        <span class="services__index meta">01</span>
+                    </div>
+                    <h3 class="services__title">Flutter Development</h3>
+                    <p class="services__desc">Production-ready Flutter applications built with scalable architecture, clean code, and a strong focus on reliability.</p>
+                </div>
+                            <div class="services__item" data-reveal data-card-glow>
+                    <div class="services__top">
+                        <div class="services__icon-wrapper">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon services__icon"
+>
+                <rect x="4" y="4" width="16" height="16" rx="1" /><path d="M4 9h16" /><path d="M9 4v16" />
+            </svg>
+                        </div>
+                        <span class="services__index meta">02</span>
+                    </div>
+                    <h3 class="services__title">Application Architecture</h3>
+                    <p class="services__desc">Designing scalable and maintainable application architecture using Clean Architecture, SOLID principles, and proven design patterns.</p>
+                </div>
+                            <div class="services__item" data-reveal data-card-glow>
+                    <div class="services__top">
+                        <div class="services__icon-wrapper">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon services__icon"
+>
+                <path d="M9 2v6" /><path d="M15 2v6" /><path d="M6 8h12v4a6 6 0 0 1-12 0V8z" /><path d="M12 18v4" />
+            </svg>
+                        </div>
+                        <span class="services__index meta">03</span>
+                    </div>
+                    <h3 class="services__title">API Integration</h3>
+                    <p class="services__desc">Reliable integration with REST APIs, authentication systems, backend services, and third-party platforms.</p>
+                </div>
+                            <div class="services__item" data-reveal data-card-glow>
+                    <div class="services__top">
+                        <div class="services__icon-wrapper">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon services__icon"
+>
+                <circle cx="12" cy="12" r="2" /><path d="M16.24 7.76a6 6 0 0 1 0 8.48" /><path d="M7.76 16.24a6 6 0 0 1 0-8.48" /><path d="M19.07 4.93a10 10 0 0 1 0 14.14" /><path d="M4.93 19.07a10 10 0 0 1 0-14.14" />
+            </svg>
+                        </div>
+                        <span class="services__index meta">04</span>
+                    </div>
+                    <h3 class="services__title">Real-Time Features</h3>
+                    <p class="services__desc">Building real-time functionality using WebSockets, live data updates, notifications, and synchronized application state.</p>
+                </div>
+                            <div class="services__item" data-reveal data-card-glow>
+                    <div class="services__top">
+                        <div class="services__icon-wrapper">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon services__icon"
+>
+                <rect x="2" y="5" width="20" height="14" rx="2" /><path d="M2 10h20" />
+            </svg>
+                        </div>
+                        <span class="services__index meta">05</span>
+                    </div>
+                    <h3 class="services__title">Payment Integration</h3>
+                    <p class="services__desc">Integrating secure payment flows and payment gateways into Flutter applications with reliable transaction handling.</p>
+                </div>
+                            <div class="services__item" data-reveal data-card-glow>
+                    <div class="services__top">
+                        <div class="services__icon-wrapper">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon services__icon"
+>
+                <path d="M12 12l4-3" /><circle cx="12" cy="12" r="9" /><path d="M7 15a6 6 0 0 1 10 0" />
+            </svg>
+                        </div>
+                        <span class="services__index meta">06</span>
+                    </div>
+                    <h3 class="services__title">Performance Optimization</h3>
+                    <p class="services__desc">Identifying and resolving performance bottlenecks across rendering, memory usage, API handling, and application startup.</p>
+                </div>
+                            <div class="services__item" data-reveal data-card-glow>
+                    <div class="services__top">
+                        <div class="services__icon-wrapper">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon services__icon"
+>
+                <path d="M4 4v5h5" /><path d="M20 20v-5h-5" /><path d="M5.5 9A7 7 0 0 1 19 8" /><path d="M18.5 15A7 7 0 0 1 5 16" />
+            </svg>
+                        </div>
+                        <span class="services__index meta">07</span>
+                    </div>
+                    <h3 class="services__title">Legacy Application Improvements</h3>
+                    <p class="services__desc">Refactoring and modernizing existing Flutter codebases to improve maintainability, stability, and long-term scalability.</p>
+                </div>
+                            <div class="services__item" data-reveal data-card-glow>
+                    <div class="services__top">
+                        <div class="services__icon-wrapper">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon services__icon"
+>
+                <path d="M12 2c3 2 5 6 5 10 0 2-1 4-2 5l-1-3-4 0-1 3c-1-1-2-3-2-5 0-4 2-8 5-10z" /><circle cx="12" cy="9" r="1.5" /><path d="M8 16l-2 5 4-2" /><path d="M16 16l2 5-4-2" />
+            </svg>
+                        </div>
+                        <span class="services__index meta">08</span>
+                    </div>
+                    <h3 class="services__title">Production Deployment</h3>
+                    <p class="services__desc">Preparing Flutter applications for production release across iOS and Android, including release configuration, testing, and deployment.</p>
+                </div>
+                            <div class="services__item" data-reveal data-card-glow>
+                    <div class="services__top">
+                        <div class="services__icon-wrapper">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon services__icon"
+>
+                <circle cx="12" cy="12" r="9" /><path d="M3 12h18" /><path d="M12 3c2.5 2.5 3.8 5.7 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.7-3.8-9s1.3-6.5 3.8-9z" />
+            </svg>
+                        </div>
+                        <span class="services__index meta">09</span>
+                    </div>
+                    <h3 class="services__title">Web Development</h3>
+                    <p class="services__desc">Development of modern, responsive websites and web applications, with clean frontend implementation and reliable integration with backend services and APIs.</p>
+                </div>
+                    </div>
+    </div>
+</section>
+    <section id="contact" class="section contact">
+    <div class="container">
+        <div class="section-header" data-reveal>
+            <span class="section-header__tag">07 · Get in Touch</span>
+            <h2 class="section-header__title">Contact</h2>
+        </div>
+
+        <div class="contact__grid">
+            <div class="contact__intro" data-reveal>
+                <p class="contact__lead">Have a Flutter project in mind, or need a senior developer to join your team? I&#039;m open to hearing about it.</p>
+
+                <div class="contact__cards">
+                    <!-- Live Availability Banner -->
+                    <div class="contact__availability-bar">
+                        <span class="contact__avail-pulse">
+                            <span class="contact__avail-ping"></span>
+                            <span class="contact__avail-dot"></span>
+                        </span>
+                        <span class="contact__avail-text">Currently Open for Engineering Contracts &amp; Advisory</span>
+                    </div>
+
+                    <!-- Email Card with Copy Feature -->
+                    <div class="contact__card" data-card-glow>
+                        <div class="contact__card-icon">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <rect x="3" y="5" width="18" height="14" rx="2" /><path d="M3 7l9 6 9-6" />
+            </svg>
+                        </div>
+                        <div class="contact__card-body">
+                            <span class="contact__card-label">Email</span>
+                            <div class="contact__email-row">
+                                <a href="mailto:almadmouj@gmail.com" class="contact__email-link">
+                                    almadmouj@gmail.com
+                                </a>
+                                <button type="button" class="contact__copy-btn" data-copy-text="almadmouj@gmail.com" aria-label="Copy email address">
+                                    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon copy-icon"
+>
+                <rect x="9" y="9" width="13" height="13" rx="2" /><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+            </svg>
+                                    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon check-icon"
+>
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+                                    <span class="contact__copy-tooltip">Copied!</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phone Card -->
+                                            <div class="contact__card" data-card-glow>
+                            <div class="contact__card-icon">
+                                <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <rect x="7" y="2" width="10" height="20" rx="2" /><path d="M11 18h2" />
+            </svg>
+                            </div>
+                            <div class="contact__card-body">
+                                <span class="contact__card-label">Phone</span>
+                                <div class="contact__email-row">
+                                    <a href="tel:+962780989992" class="contact__email-link">
+                                        +962 780 989 992
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <!-- Location & Live Timezone Card -->
+                    <div class="contact__card" data-card-glow>
+                        <div class="contact__card-icon contact__card-icon--accent">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z" /><circle cx="12" cy="10" r="2.3" />
+            </svg>
+                        </div>
+                        <div class="contact__card-body">
+                            <div class="contact__timezone-header">
+                                <span class="contact__card-label">Location &amp; Local Time</span>
+                                <span class="contact__live-clock-badge meta" id="live-jordan-time">17:00 UTC+3</span>
+                            </div>
+                            <span class="contact__card-val">Amman, Jordan · Remote Worldwide</span>
+                        </div>
+                    </div>
+
+                    <!-- Social Links Strip -->
+                    <div class="contact__social-strip">
+                                                                            <a href="https://www.linkedin.com/in/anas-al-madmouj-0979271aa/" target="_blank" rel="noopener noreferrer" class="contact__social-btn">
+                                <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <rect x="3" y="3" width="18" height="18" rx="2" /><path d="M7 10v7" /><circle cx="7" cy="7" r="1" /><path d="M11 17v-4a2 2 0 0 1 4 0v4" /><path d="M11 10v7" />
+            </svg>
+                                <span>LinkedIn</span>
+                                <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="12"
+    height="12"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon contact__social-arrow"
+>
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" />
+            </svg>
+                            </a>
+                                            </div>
+                </div>
+            </div>
+
+            <div class="contact__form-container" data-reveal>
+                <form class="contact__form" method="POST" action="https://formspree.io/f/moeagway" novalidate>
+                    <input type="hidden" name="rendered_at" value="1787678125">
+                    <input type="text" name="_gotcha" style="display:none">
+                    <input type="hidden" name="_language" value="en">
+                    <input type="hidden" name="_next" value="https://anasalmadmouj.github.io/anas-portfolio/en/index.html#contact">
+
+                    <div class="form-field form-field--honeypot" aria-hidden="true">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company" tabindex="-1" autocomplete="off">
+                    </div>
+
+                    
+                    <div class="form-field">
+                        <label for="name">Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            value=""
+                            placeholder="Your name"
+                            autocomplete="name"
+                            required
+                                                    >
+                                            </div>
+
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            value=""
+                            placeholder="you@example.com"
+                            autocomplete="email"
+                            required
+                                                    >
+                                            </div>
+
+                    <div class="form-field">
+                        <label for="message">Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="Tell me about your project, requirements, or timeline..."
+                            required
+                                                    ></textarea>
+                                            </div>
+
+                    <button type="submit" class="btn btn--primary btn--lg contact__submit">
+                        <span>Send Message</span>
+                        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon icon--directional"
+>
+                <path d="M5 12h14" /><path d="M13 6l6 6-6 6" />
+            </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <footer class="site-footer">
+    <div class="container site-footer__inner">
+        <div class="site-footer__top">
+            <div class="site-footer__identity">
+                <div class="site-footer__brand">
+                    <span class="navbar__brand-mark" aria-hidden="true">
+                        <span class="navbar__brand-glyph">~/</span>
+                    </span>
+                    <span class="site-footer__name">Anas Almadmouj</span>
+                </div>
+                <p class="site-footer__role meta">Senior Flutter Developer · Jordan</p>
+            </div>
+
+            <ul class="site-footer__social">
+                                                    <li>
+                        <a href="https://www.linkedin.com/in/anas-al-madmouj-0979271aa/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <rect x="3" y="3" width="18" height="18" rx="2" /><path d="M7 10v7" /><circle cx="7" cy="7" r="1" /><path d="M11 17v-4a2 2 0 0 1 4 0v4" /><path d="M11 10v7" />
+            </svg>
+                        </a>
+                    </li>
+                                <li>
+                    <a href="mailto:almadmouj@gmail.com" aria-label="Email">
+                        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon"
+>
+                <rect x="3" y="5" width="18" height="14" rx="2" /><path d="M3 7l9 6 9-6" />
+            </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="site-footer__meta">
+            <p class="meta">&copy; 2026 Anas Almadmouj. All rights reserved.</p>
+            <a href="#home" class="site-footer__back-to-top">
+                Back to top
+                <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    focusable="false"
+    class="icon site-footer__back-icon"
+>
+                <path d="M5 12h14" /><path d="M13 6l6 6-6 6" />
+            </svg>
+            </a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

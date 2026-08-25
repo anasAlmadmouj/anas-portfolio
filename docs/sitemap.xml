@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://anasalmadmouj.github.io/anas-portfolio/en/index.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://anasalmadmouj.github.io/anas-portfolio/en/index.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://anasalmadmouj.github.io/anas-portfolio/ar/index.html" />
+    </url>
+    <url>
+        <loc>https://anasalmadmouj.github.io/anas-portfolio/ar/index.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://anasalmadmouj.github.io/anas-portfolio/en/index.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://anasalmadmouj.github.io/anas-portfolio/ar/index.html" />
+    </url>
+    <url>
+        <loc>https://anasalmadmouj.github.io/anas-portfolio/en/projects.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://anasalmadmouj.github.io/anas-portfolio/en/projects.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://anasalmadmouj.github.io/anas-portfolio/ar/projects.html" />
+    </url>
+    <url>
+        <loc>https://anasalmadmouj.github.io/anas-portfolio/ar/projects.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://anasalmadmouj.github.io/anas-portfolio/en/projects.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://anasalmadmouj.github.io/anas-portfolio/ar/projects.html" />
+    </url>
+    <url>
+        <loc>https://anasalmadmouj.github.io/anas-portfolio/en/projects/tourstify.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://anasalmadmouj.github.io/anas-portfolio/en/projects/tourstify.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://anasalmadmouj.github.io/anas-portfolio/ar/projects/tourstify.html" />
+    </url>
+    <url>
+        <loc>https://anasalmadmouj.github.io/anas-portfolio/ar/projects/tourstify.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://anasalmadmouj.github.io/anas-portfolio/en/projects/tourstify.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://anasalmadmouj.github.io/anas-portfolio/ar/projects/tourstify.html" />
+    </url>
+    <url>
+        <loc>https://anasalmadmouj.github.io/anas-portfolio/en/projects/mondoway.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://anasalmadmouj.github.io/anas-portfolio/en/projects/mondoway.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://anasalmadmouj.github.io/anas-portfolio/ar/projects/mondoway.html" />
+    </url>
+    <url>
+        <loc>https://anasalmadmouj.github.io/anas-portfolio/ar/projects/mondoway.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://anasalmadmouj.github.io/anas-portfolio/en/projects/mondoway.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://anasalmadmouj.github.io/anas-portfolio/ar/projects/mondoway.html" />
+    </url>
+</urlset>

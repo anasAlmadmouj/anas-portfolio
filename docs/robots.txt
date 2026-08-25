@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://anasalmadmouj.github.io/anas-portfolio/sitemap.xml
