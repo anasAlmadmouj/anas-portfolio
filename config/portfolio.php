@@ -12,6 +12,13 @@ return [
     'contact' => [
         'email' => env('PORTFOLIO_EMAIL') ?: 'almadmouj@gmail.com',
         'phone' => env('PORTFOLIO_PHONE') ?: '+962 780 989 992',
+        /*
+         * GitHub Pages serves /docs as plain static files, so the contact
+         * form can't POST to the Laravel `contact.store` route there — it
+         * has no server behind it, which is what produced the 405.
+         * Formspree is the actual backend for the deployed static site.
+         */
+        'formspree_endpoint' => env('PORTFOLIO_FORMSPREE_ENDPOINT') ?: 'https://formspree.io/f/moeagway',
         'location' => 'Amman, Jordan',
         'social' => [
             'github' => env('PORTFOLIO_GITHUB_URL'),

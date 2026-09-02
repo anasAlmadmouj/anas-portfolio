@@ -170,6 +170,44 @@ function initCopyButtons() {
     });
 }
 
+// Contact form: submit to Formspree via fetch so the visitor never leaves
+// the static site (a plain POST would navigate away to formspree.io).
+function initContactForm() {
+    const form = document.querySelector('[data-contact-form]');
+    if (!form) return;
+
+    const successEl = document.getElementById('contact-form-success');
+    const errorEl = document.getElementById('contact-form-error');
+    const submitBtn = form.querySelector('.contact__submit');
+
+    form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        successEl?.setAttribute('hidden', '');
+        errorEl?.setAttribute('hidden', '');
+        submitBtn?.setAttribute('disabled', '');
+
+        try {
+            const response = await fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form),
+                headers: { Accept: 'application/json' },
+            });
+
+            if (response.ok) {
+                successEl?.removeAttribute('hidden');
+                form.reset();
+            } else {
+                errorEl?.removeAttribute('hidden');
+            }
+        } catch (err) {
+            errorEl?.removeAttribute('hidden');
+        } finally {
+            submitBtn?.removeAttribute('disabled');
+        }
+    });
+}
+
 // Interactive Media Showcase Screenshot Switcher
 function initMediaShowcase() {
     const showcases = document.querySelectorAll('[data-media-showcase]');
@@ -236,6 +274,7 @@ function initAllInteractions() {
     initConsole3DTilt();
     initLiveJordanClock();
     initCopyButtons();
+    initContactForm();
     initMediaShowcase();
     initProjectDetailsGallery();
 }

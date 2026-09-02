@@ -91,21 +91,29 @@
             </div>
 
             <div class="contact__form-container" data-reveal>
-                <form class="contact__form" method="POST" action="{{ route('contact.store', ['locale' => $locale]) }}" novalidate>
-                    @csrf
-                    <input type="hidden" name="rendered_at" value="{{ now()->timestamp }}">
+                <form
+                    class="contact__form"
+                    method="POST"
+                    action="{{ config('portfolio.contact.formspree_endpoint') }}"
+                    data-contact-form
+                    novalidate
+                >
+                    <input type="hidden" name="_subject" value="New portfolio contact message">
 
                     <div class="form-field form-field--honeypot" aria-hidden="true">
                         <label for="company">Company</label>
-                        <input type="text" id="company" name="company" tabindex="-1" autocomplete="off">
+                        <input type="text" id="company" name="_gotcha" tabindex="-1" autocomplete="off">
                     </div>
 
-                    @if(session('contactStatus') === 'success')
-                        <div class="form-status form-status--success" role="status">
-                            <x-ui.icon name="check" size="18" />
-                            <span>{{ __('contact.form.success') }}</span>
-                        </div>
-                    @endif
+                    <div class="form-status form-status--success" role="status" id="contact-form-success" hidden>
+                        <x-ui.icon name="check" size="18" />
+                        <span>{{ __('contact.form.success') }}</span>
+                    </div>
+
+                    <div class="form-status form-status--error" role="alert" id="contact-form-error" hidden>
+                        <x-ui.icon name="close" size="18" />
+                        <span>{{ __('contact.form.error') }}</span>
+                    </div>
 
                     <div class="form-field">
                         <label for="name">{{ __('contact.form.name') }}</label>
