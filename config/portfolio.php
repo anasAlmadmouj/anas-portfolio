@@ -1,13 +1,21 @@
 <?php
 
 return [
+    /*
+     * `?:` (not env()'s built-in default) on purpose: .env.example ships
+     * these as present-but-blank so a fresh checkout boots cleanly, and
+     * env('KEY', $default) only falls back when the key is entirely unset
+     * — a blank value still wins and silently empties these out. That's
+     * what happened in CI: it copies .env.example verbatim, so the built
+     * static docs lost the email/phone/LinkedIn everywhere.
+     */
     'contact' => [
-        'email' => env('PORTFOLIO_EMAIL', 'almadmouj@gmail.com'),
-        'phone' => env('PORTFOLIO_PHONE'),
+        'email' => env('PORTFOLIO_EMAIL') ?: 'almadmouj@gmail.com',
+        'phone' => env('PORTFOLIO_PHONE') ?: '+962 780 989 992',
         'location' => 'Amman, Jordan',
         'social' => [
             'github' => env('PORTFOLIO_GITHUB_URL'),
-            'linkedin' => env('PORTFOLIO_LINKEDIN_URL'),
+            'linkedin' => env('PORTFOLIO_LINKEDIN_URL') ?: 'https://www.linkedin.com/in/anas-al-madmouj-0979271aa/',
         ],
     ],
 
