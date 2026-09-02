@@ -7,6 +7,14 @@ function initMobileMenu() {
 
     if (!toggle || !menu) return;
 
+    // The navbar has a backdrop-filter, which makes it the containing block
+    // for this fixed-position overlay — confining it to the navbar's own
+    // height instead of the full viewport. Move it to <body> so `position:
+    // fixed; inset: 0` resolves against the viewport as intended.
+    if (menu.parentElement !== document.body) {
+        document.body.appendChild(menu);
+    }
+
     const isOpen = () => !menu.hasAttribute('hidden');
 
     const openMenu = () => {
@@ -164,15 +172,18 @@ function initPageTransitions() {
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+function initAll() {
     initMobileMenu();
     initNavbarScrollState();
     initNavIndicator();
     initPageTransitions();
-});
+}
 
-// Run once immediately
-initMobileMenu();
-initNavbarScrollState();
-initNavIndicator();
-initPageTransitions();
+// Module scripts run after the document has been parsed, so DOMContentLoaded
+// may fire either before or after this point. Run once, whichever comes first,
+// to avoid double-registering listeners (which broke the mobile menu toggle).
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAll);
+} else {
+    initAll();
+}

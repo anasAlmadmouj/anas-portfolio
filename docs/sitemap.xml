@@ -40,4 +40,24 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://anasalmadmouj.github.io/anas-portfolio/en/projects/mondoway.html" />
         <xhtml:link rel="alternate" hreflang="ar" href="https://anasalmadmouj.github.io/anas-portfolio/ar/projects/mondoway.html" />
     </url>
+    <url>
+        <loc>https://anasalmadmouj.github.io/anas-portfolio/en/projects/bravobravo.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://anasalmadmouj.github.io/anas-portfolio/en/projects/bravobravo.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://anasalmadmouj.github.io/anas-portfolio/ar/projects/bravobravo.html" />
+    </url>
+    <url>
+        <loc>https://anasalmadmouj.github.io/anas-portfolio/ar/projects/bravobravo.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://anasalmadmouj.github.io/anas-portfolio/en/projects/bravobravo.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://anasalmadmouj.github.io/anas-portfolio/ar/projects/bravobravo.html" />
+    </url>
+    <url>
+        <loc>https://anasalmadmouj.github.io/anas-portfolio/en/projects/ahlan.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://anasalmadmouj.github.io/anas-portfolio/en/projects/ahlan.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://anasalmadmouj.github.io/anas-portfolio/ar/projects/ahlan.html" />
+    </url>
+    <url>
+        <loc>https://anasalmadmouj.github.io/anas-portfolio/ar/projects/ahlan.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://anasalmadmouj.github.io/anas-portfolio/en/projects/ahlan.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://anasalmadmouj.github.io/anas-portfolio/ar/projects/ahlan.html" />
+    </url>
 </urlset>
