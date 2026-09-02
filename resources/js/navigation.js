@@ -54,7 +54,17 @@ function initMobileMenu() {
     }
 
     menu.querySelectorAll('a').forEach((link) => {
-        link.addEventListener('click', () => closeMenu());
+        // Deferred on purpose: closing the menu synchronously here hides/
+        // fades the overlay (and the link itself) while this same click
+        // event is still being dispatched. On Android Chrome that causes
+        // the browser to cancel the tap's own pending navigation — taps
+        // close the menu but never follow the link. A real mouse click
+        // (or a desktop browser just resized to a mobile width) isn't
+        // touch-originated and never hits this, which is why it only
+        // reproduces on an actual phone. Deferring to the next tick lets
+        // navigation fire first; the close then happens on the page we're
+        // leaving anyway, so it's imperceptible.
+        link.addEventListener('click', () => setTimeout(() => closeMenu(), 0));
     });
 
     document.addEventListener('keydown', (event) => {
