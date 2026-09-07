@@ -142,27 +142,28 @@ function initMobileMenu() {
                     event.preventDefault();
 
                     const log = window.__navDebugLog || (() => {});
-                    log(
-                        `pre-close: scrollY=${window.scrollY} html.overflow="${document.documentElement.style.overflow}" ` +
-                        `body.overflow="${document.body.style.overflow}" targetTop=${Math.round(target.getBoundingClientRect().top)}`
-                    );
-
                     closeMenu();
 
                     log(
-                        `post-close: scrollY=${window.scrollY} html.overflow="${document.documentElement.style.overflow}" ` +
-                        `body.overflow="${document.body.style.overflow}" targetTop=${Math.round(target.getBoundingClientRect().top)}`
+                        `computed overflow html="${getComputedStyle(document.documentElement).overflow}" ` +
+                        `body="${getComputedStyle(document.body).overflow}" ` +
+                        `scrollingElement=${document.scrollingElement === document.documentElement ? 'documentElement' : document.scrollingElement && document.scrollingElement.tagName}`
                     );
 
-                    try {
-                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                        log('scrollIntoView() called, no error thrown');
-                    } catch (err) {
-                        log(`scrollIntoView() THREW: ${err.message}`);
-                    }
-
-                    setTimeout(() => log(`+50ms: scrollY=${window.scrollY}`), 50);
-                    setTimeout(() => log(`+400ms: scrollY=${window.scrollY}`), 400);
+                    // scrollIntoView() alone was confirmed (via on-device log) to
+                    // silently do nothing here even with overflow unlocked and no
+                    // error thrown. Fall back to an explicit window.scrollTo with
+                    // a manually computed absolute offset, deferred two animation
+                    // frames past closeMenu() so layout has fully settled after
+                    // the overflow unlock before we try to scroll.
+                    requestAnimationFrame(() => {
+                        requestAnimationFrame(() => {
+                            const top = target.getBoundingClientRect().top + window.scrollY;
+                            log(`rAFx2 pre-scroll: scrollY=${window.scrollY} computedTop=${Math.round(top)}`);
+                            window.scrollTo({ top, behavior: 'smooth' });
+                            setTimeout(() => log(`+300ms after scrollTo: scrollY=${window.scrollY}`), 300);
+                        });
+                    });
 
                     history.pushState(null, '', url.hash);
                     return;
