@@ -1,9 +1,14 @@
 // Temporary on-screen diagnostic for the mobile-nav-doesn't-navigate report.
-// Visit any page with ?navdebug appended to see, directly on the device
-// screen, what actually receives each tap and whether navigation gets
-// cancelled. Remove once the real-device repro is understood.
+// Always on for now (no query param — too easy to lose "?navdebug" to
+// mobile address-bar autocomplete/cache) so it's visible on any page load.
+// Remove once the real-device repro is understood.
 function initNavDebugOverlay() {
-    if (!location.search.includes('navdebug')) return;
+    const badge = document.createElement('div');
+    badge.textContent = 'navdebug active';
+    badge.style.cssText =
+        'position:fixed;top:0;right:0;background:#f0f;color:#000;font:10px monospace;' +
+        'padding:2px 6px;z-index:2147483647;pointer-events:none;';
+    document.body.appendChild(badge);
 
     const panel = document.createElement('div');
     panel.style.cssText =
