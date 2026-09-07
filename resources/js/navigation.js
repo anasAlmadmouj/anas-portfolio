@@ -1,3 +1,62 @@
+// Temporary on-screen diagnostic for the mobile-nav-doesn't-navigate report.
+// Visit any page with ?navdebug appended to see, directly on the device
+// screen, what actually receives each tap and whether navigation gets
+// cancelled. Remove once the real-device repro is understood.
+function initNavDebugOverlay() {
+    if (!location.search.includes('navdebug')) return;
+
+    const panel = document.createElement('div');
+    panel.style.cssText =
+        'position:fixed;bottom:0;left:0;right:0;max-height:45vh;overflow:auto;' +
+        'background:rgba(0,0,0,0.92);color:#0f0;font:11px/1.4 monospace;' +
+        'padding:8px;z-index:2147483647;white-space:pre-wrap;pointer-events:none;';
+    panel.textContent = 'navdebug ready — tap a mobile nav link';
+    document.body.appendChild(panel);
+
+    const describe = (el) =>
+        el ? `<${el.tagName.toLowerCase()} class="${el.className}">` : 'null';
+
+    // Capture phase: fires first, before any click handler can mutate the DOM.
+    document.addEventListener(
+        'click',
+        (event) => {
+            const anchor = event.target.closest('a');
+            panel.textContent =
+                `[capture] target=${describe(event.target)}\n` +
+                `anchor=${anchor ? anchor.href : 'none'}\n` +
+                `defaultPrevented=${event.defaultPrevented}\n` +
+                panel.textContent;
+        },
+        true
+    );
+
+    // Bubble phase on document fires last (after the target's own handlers),
+    // so this shows the final defaultPrevented state before the browser
+    // decides whether to navigate.
+    document.addEventListener('click', (event) => {
+        const anchor = event.target.closest('a');
+        panel.textContent =
+            `[bubble] target=${describe(event.target)}\n` +
+            `anchor=${anchor ? anchor.href : 'none'}\n` +
+            `defaultPrevented=${event.defaultPrevented}\n` +
+            `---\n` +
+            panel.textContent;
+    });
+
+    ['touchstart', 'touchend'].forEach((type) => {
+        document.addEventListener(
+            type,
+            (event) => {
+                const t = event.touches[0] || event.changedTouches[0];
+                panel.textContent =
+                    `[${type}] target=${describe(event.target)} at (${t?.clientX},${t?.clientY})\n` +
+                    panel.textContent;
+            },
+            { passive: true }
+        );
+    });
+}
+
 // Mobile Fullscreen Navigation Overlay
 function initMobileMenu() {
     const toggle = document.querySelector('[data-menu-toggle]');
@@ -183,6 +242,7 @@ function initPageTransitions() {
 }
 
 function initAll() {
+    initNavDebugOverlay();
     initMobileMenu();
     initNavbarScrollState();
     initNavIndicator();
