@@ -18,6 +18,10 @@ function initNavDebugOverlay() {
     panel.textContent = 'navdebug ready — tap a mobile nav link';
     document.body.appendChild(panel);
 
+    window.__navDebugLog = (msg) => {
+        panel.textContent = `[log] ${msg}\n` + panel.textContent;
+    };
+
     const describe = (el) =>
         el ? `<${el.tagName.toLowerCase()} class="${el.className}">` : 'null';
 
@@ -136,8 +140,30 @@ function initMobileMenu() {
                 const target = document.querySelector(url.hash);
                 if (target) {
                     event.preventDefault();
+
+                    const log = window.__navDebugLog || (() => {});
+                    log(
+                        `pre-close: scrollY=${window.scrollY} html.overflow="${document.documentElement.style.overflow}" ` +
+                        `body.overflow="${document.body.style.overflow}" targetTop=${Math.round(target.getBoundingClientRect().top)}`
+                    );
+
                     closeMenu();
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+                    log(
+                        `post-close: scrollY=${window.scrollY} html.overflow="${document.documentElement.style.overflow}" ` +
+                        `body.overflow="${document.body.style.overflow}" targetTop=${Math.round(target.getBoundingClientRect().top)}`
+                    );
+
+                    try {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        log('scrollIntoView() called, no error thrown');
+                    } catch (err) {
+                        log(`scrollIntoView() THREW: ${err.message}`);
+                    }
+
+                    setTimeout(() => log(`+50ms: scrollY=${window.scrollY}`), 50);
+                    setTimeout(() => log(`+400ms: scrollY=${window.scrollY}`), 400);
+
                     history.pushState(null, '', url.hash);
                     return;
                 }
