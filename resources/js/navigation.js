@@ -118,17 +118,36 @@ function initMobileMenu() {
     }
 
     menu.querySelectorAll('a').forEach((link) => {
-        // Deferred on purpose: closing the menu synchronously here hides/
-        // fades the overlay (and the link itself) while this same click
-        // event is still being dispatched. On Android Chrome that causes
-        // the browser to cancel the tap's own pending navigation — taps
-        // close the menu but never follow the link. A real mouse click
-        // (or a desktop browser just resized to a mobile width) isn't
-        // touch-originated and never hits this, which is why it only
-        // reproduces on an actual phone. Deferring to the next tick lets
-        // navigation fire first; the close then happens on the page we're
-        // leaving anyway, so it's imperceptible.
-        link.addEventListener('click', () => setTimeout(() => closeMenu(), 0));
+        link.addEventListener('click', (event) => {
+            const url = new URL(link.href, location.href);
+            const isSamePage = url.pathname === location.pathname && url.search === location.search;
+
+            if (isSamePage && url.hash) {
+                // Same-page section links (#projects, #about, ...): don't rely
+                // on the browser's built-in "scroll to anchor" default action.
+                // At the moment that action would run, <html>/<body> still have
+                // overflow: hidden from the open menu, so the page isn't
+                // scrollable yet — the browser silently drops the scroll, and
+                // by the time closeMenu() restores overflow the opportunity has
+                // passed. Confirmed on a real Android device via an on-screen
+                // event log: the click itself was never prevented and had the
+                // correct href, it's the scroll that quietly failed. Take
+                // manual control instead: unlock scroll first, then scroll.
+                const target = document.querySelector(url.hash);
+                if (target) {
+                    event.preventDefault();
+                    closeMenu();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    history.pushState(null, '', url.hash);
+                    return;
+                }
+            }
+
+            // Cross-page links: let the browser navigate normally. Defer the
+            // close so it doesn't race the click's own default action, though
+            // it's moot in practice since this page is about to unload anyway.
+            setTimeout(() => closeMenu(), 0);
+        });
     });
 
     document.addEventListener('keydown', (event) => {
