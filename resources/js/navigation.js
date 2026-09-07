@@ -1,71 +1,3 @@
-// Temporary on-screen diagnostic for the mobile-nav-doesn't-navigate report.
-// Always on for now (no query param — too easy to lose "?navdebug" to
-// mobile address-bar autocomplete/cache) so it's visible on any page load.
-// Remove once the real-device repro is understood.
-function initNavDebugOverlay() {
-    const badge = document.createElement('div');
-    badge.textContent = 'navdebug active';
-    badge.style.cssText =
-        'position:fixed;top:0;right:0;background:#f0f;color:#000;font:10px monospace;' +
-        'padding:2px 6px;z-index:2147483647;pointer-events:none;';
-    document.body.appendChild(badge);
-
-    const panel = document.createElement('div');
-    panel.style.cssText =
-        'position:fixed;bottom:0;left:0;right:0;max-height:45vh;overflow:auto;' +
-        'background:rgba(0,0,0,0.92);color:#0f0;font:11px/1.4 monospace;' +
-        'padding:8px;z-index:2147483647;white-space:pre-wrap;pointer-events:none;';
-    panel.textContent = 'navdebug ready — tap a mobile nav link';
-    document.body.appendChild(panel);
-
-    window.__navDebugLog = (msg) => {
-        panel.textContent = `[log] ${msg}\n` + panel.textContent;
-    };
-
-    const describe = (el) =>
-        el ? `<${el.tagName.toLowerCase()} class="${el.className}">` : 'null';
-
-    // Capture phase: fires first, before any click handler can mutate the DOM.
-    document.addEventListener(
-        'click',
-        (event) => {
-            const anchor = event.target.closest('a');
-            panel.textContent =
-                `[capture] target=${describe(event.target)}\n` +
-                `anchor=${anchor ? anchor.href : 'none'}\n` +
-                `defaultPrevented=${event.defaultPrevented}\n` +
-                panel.textContent;
-        },
-        true
-    );
-
-    // Bubble phase on document fires last (after the target's own handlers),
-    // so this shows the final defaultPrevented state before the browser
-    // decides whether to navigate.
-    document.addEventListener('click', (event) => {
-        const anchor = event.target.closest('a');
-        panel.textContent =
-            `[bubble] target=${describe(event.target)}\n` +
-            `anchor=${anchor ? anchor.href : 'none'}\n` +
-            `defaultPrevented=${event.defaultPrevented}\n` +
-            `---\n` +
-            panel.textContent;
-    });
-
-    ['touchstart', 'touchend'].forEach((type) => {
-        document.addEventListener(
-            type,
-            (event) => {
-                const t = event.touches[0] || event.changedTouches[0];
-                panel.textContent =
-                    `[${type}] target=${describe(event.target)} at (${t?.clientX},${t?.clientY})\n` +
-                    panel.textContent;
-            },
-            { passive: true }
-        );
-    });
-}
-
 // Mobile Fullscreen Navigation Overlay
 function initMobileMenu() {
     const toggle = document.querySelector('[data-menu-toggle]');
@@ -140,28 +72,18 @@ function initMobileMenu() {
                 const target = document.querySelector(url.hash);
                 if (target) {
                     event.preventDefault();
-
-                    const log = window.__navDebugLog || (() => {});
                     closeMenu();
 
-                    log(
-                        `computed overflow html="${getComputedStyle(document.documentElement).overflow}" ` +
-                        `body="${getComputedStyle(document.body).overflow}" ` +
-                        `scrollingElement=${document.scrollingElement === document.documentElement ? 'documentElement' : document.scrollingElement && document.scrollingElement.tagName}`
-                    );
-
-                    // scrollIntoView() alone was confirmed (via on-device log) to
-                    // silently do nothing here even with overflow unlocked and no
-                    // error thrown. Fall back to an explicit window.scrollTo with
-                    // a manually computed absolute offset, deferred two animation
-                    // frames past closeMenu() so layout has fully settled after
-                    // the overflow unlock before we try to scroll.
+                    // target.scrollIntoView() doesn't reliably scroll here —
+                    // confirmed on a real Android device that it silently does
+                    // nothing even once overflow is unlocked. Compute the
+                    // absolute offset and scroll manually instead, deferred two
+                    // animation frames past closeMenu() so layout has settled
+                    // after the overflow unlock.
                     requestAnimationFrame(() => {
                         requestAnimationFrame(() => {
                             const top = target.getBoundingClientRect().top + window.scrollY;
-                            log(`rAFx2 pre-scroll: scrollY=${window.scrollY} computedTop=${Math.round(top)}`);
                             window.scrollTo({ top, behavior: 'smooth' });
-                            setTimeout(() => log(`+300ms after scrollTo: scrollY=${window.scrollY}`), 300);
                         });
                     });
 
@@ -293,7 +215,6 @@ function initPageTransitions() {
 }
 
 function initAll() {
-    initNavDebugOverlay();
     initMobileMenu();
     initNavbarScrollState();
     initNavIndicator();
