@@ -6,7 +6,7 @@ return [
         'heading' => 'أبني منتجات Mobile جاهزة للإنتاج باستخدام Flutter.',
     ],
 
-    'intro' => 'أنا Software Engineer وSenior Flutter Developer بخبرة أكثر من 5 سنوات في التطوير الاحترافي، مع تركيز أساسي على بناء وصيانة تطبيقات Mobile جاهزة للإنتاج. لدي خبرة عملية في تطوير أكثر من 15 تطبيقًا ومشروع Production، باستخدام Flutter وDart وClean Architecture وBLoC/Cubit وFirebase وREST APIs وWebSockets وPayment Gateways وSQL وGit وPerformance Optimization. كما منحتني خبرتي المبكرة في تطوير Web باستخدام ASP.NET/.NET وSQL أساسًا جيدًا في فهم Backend Systems وقواعد البيانات العلائقية وكيفية ارتباط تطبيقات Mobile بالأنظمة البرمجية الأخرى. أتعامل مع الهندسة البرمجية كعملية تعلّم وتطوّر مستمرة، وأستمتع بحل المشاكل التقنية المعقدة بقدر استمتاعي بتسليم منتج نظيف وموثوق.',
+    'intro' => 'أنا Software Engineer وFlutter Developer بخبرة أكثر من 5 سنوات في التطوير الاحترافي، مع تركيز أساسي على بناء وصيانة تطبيقات Mobile جاهزة للإنتاج. لدي خبرة عملية في تطوير أكثر من 15 تطبيقًا ومشروع Production، باستخدام Flutter وDart وClean Architecture وBLoC/Cubit وFirebase وREST APIs وWebSockets وPayment Gateways وSQL وGit وPerformance Optimization. كما منحتني خبرتي المبكرة في تطوير Web باستخدام ASP.NET/.NET وSQL أساسًا جيدًا في فهم Backend Systems وقواعد البيانات العلائقية وكيفية ارتباط تطبيقات Mobile بالأنظمة البرمجية الأخرى. أتعامل مع الهندسة البرمجية كعملية تعلّم وتطوّر مستمرة، وأستمتع بحل المشاكل التقنية المعقدة بقدر استمتاعي بتسليم منتج نظيف وموثوق.',
 
     'approach' => [
         'label' => 'كيف أعمل',

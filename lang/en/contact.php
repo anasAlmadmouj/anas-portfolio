@@ -4,7 +4,7 @@ return [
     'section' => [
         'eyebrow' => 'Get in Touch',
         'heading' => 'Contact',
-        'description' => "Have a Flutter project in mind, or need a senior developer to join your team? I'm open to hearing about it.",
+        'description' => "Have a Flutter project in mind, or need a developer to join your team? I'm open to hearing about it.",
     ],
 
     'availability' => 'Currently Open for Engineering Contracts & Advisory',
